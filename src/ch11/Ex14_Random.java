@@ -6,7 +6,7 @@ import java.util.Random;
 public class Ex14_Random {
 
 	public static void main(String[] args) {
-//		Random random = new Random(2022);	// seed ê°’ìœ¼ë¡œ 2022
+//		Random random = new Random(2022);	// seed °ªÀ¸·Î 2022
 		Random random = new Random();
 		System.out.println(random.nextInt(100));
 		

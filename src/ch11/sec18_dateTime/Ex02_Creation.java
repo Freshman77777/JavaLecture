@@ -1,4 +1,4 @@
-package ch11.sec18_DateTime;
+package ch11.sec18_dateTime;
 
 import java.time.Instant;
 import java.time.LocalDate;
@@ -11,19 +11,19 @@ import java.time.temporal.ChronoUnit;
 public class Ex02_Creation {
 
 	public static void main(String[] args) throws InterruptedException {
-		// ï¿½ê¶‡ï§žï¿½
+		// ³¯Â¥
 		LocalDate today = LocalDate.now();
 		System.out.println(today);
 		LocalDate examDay = LocalDate.of(2022, 11, 17);
 		System.out.println(examDay);
 		
-		// ï¿½ë–†åª›ï¿½
+		// ½Ã°£
 		LocalTime curTime = LocalTime.now();
 		System.out.println(curTime);
 		LocalTime lunchTime = LocalTime.of(11, 50);
 		System.out.println(lunchTime);
 		
-		// ï¿½ê¶‡ï§žï¿½+ï¿½ë–†åª›ï¿½
+		// ³¯Â¥+½Ã°£
 		LocalDateTime now = LocalDateTime.now();
 		System.out.println(now);
 		LocalDateTime christmas = LocalDateTime.of(2022, 12, 25, 0, 0);

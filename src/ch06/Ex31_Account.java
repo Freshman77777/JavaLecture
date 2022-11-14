@@ -11,10 +11,10 @@ public class Ex31_Account {
 	}
 
 	public void setBalance(int balance) {
-		// ë‚´ Accountì˜ total balanceê°€ 0 ì´ìƒ 100ë§Œ ì´í•˜
+		// ³» AccountÀÇ total balance°¡ 0 ÀÌ»ó 100¸¸ ÀÌÇÏ
 //		if (balance+this.balance >= MIN_BALANCE && balance+this.balance <= MAX_BALANCE)
 //			this.balance += balance;
-		// ë§¤ê°œë³€ìˆ˜ balanceê°€ 0 ì´ìƒ 100ë§Œ ì´í•˜
+		// ¸Å°³º¯¼ö balance°¡ 0 ÀÌ»ó 100¸¸ ÀÌÇÏ
 		if (balance >= MIN_BALANCE && balance <= MAX_BALANCE)
 			this.balance += balance;
 	}

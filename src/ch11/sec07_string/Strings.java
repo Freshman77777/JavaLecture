@@ -1,7 +1,7 @@
 package ch11.sec07_string;
 
 /**
- * ìœ ìš©í•œ ë‚˜ë§Œì˜ String method
+ * À¯¿ëÇÑ ³ª¸¸ÀÇ String method
  */
 public class Strings {
 	public static boolean isPalindrome(String src) {

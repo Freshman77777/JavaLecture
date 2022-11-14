@@ -11,7 +11,7 @@ public class Ex13_ArraySum {
 				sum += arr[index++];
 			}
 		} catch (ArrayIndexOutOfBoundsException e) {	
-			System.out.println("ë°°ì—´ì˜ í•©: " + sum);
+			System.out.println("¹è¿­ÀÇ ÇÕ: " + sum);
 		}
 	}
 

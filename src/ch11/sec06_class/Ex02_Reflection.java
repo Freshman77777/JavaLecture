@@ -10,7 +10,7 @@ public class Ex02_Reflection {
 		System.out.println(clazz.getName());
 		System.out.println();
 		
-		// ìƒì„±ì ì •ë³´
+		// »ı¼ºÀÚ Á¤º¸
 		Constructor[] constructors = clazz.getDeclaredConstructors();
 		for (Constructor constructor : constructors) {
 			System.out.print(constructor.getName() + "(");
@@ -20,7 +20,7 @@ public class Ex02_Reflection {
 		}
 		System.out.println();
 		
-		// ë©”ì†Œë“œ ì •ë³´
+		// ¸Ş¼Òµå Á¤º¸
 		Method[] methods = clazz.getDeclaredMethods();
 		for (Method method : methods) {
 			System.out.print(method.getName() + "(");

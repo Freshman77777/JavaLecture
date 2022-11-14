@@ -5,14 +5,14 @@ import java.util.Arrays;
 public class Ex02_ReplaceAll {
 
 	public static void main(String[] args) {
-		String data = "ë‚˜ëŠ” Java Programmingì´ ì¢‹ì•„ìš”!!!";
-		System.out.println(data.replaceAll("[A-Z]", ""));	// ëŒ€ë¬¸ì ì œê±°
-		System.out.println(data.replaceAll("[a-z]", ""));	// ì†Œë¬¸ì ì œê±°
-		System.out.println(data.replaceAll("[^ê°€-í£ ]", ""));	// í•œê¸€ê³¼ ê³µë°±ë§Œ ë‚¨ê¸°ê³  ëª¨ë‘ ì œê±°
+		String data = "³ª´Â Java ProgrammingÀÌ ÁÁ¾Æ¿ä!!!";
+		System.out.println(data.replaceAll("[A-Z]", ""));	// ´ë¹®ÀÚ Á¦°Å
+		System.out.println(data.replaceAll("[a-z]", ""));	// ¼Ò¹®ÀÚ Á¦°Å
+		System.out.println(data.replaceAll("[^°¡-ÆR ]", ""));	// ÇÑ±Û°ú °ø¹é¸¸ ³²±â°í ¸ğµÎ Á¦°Å
 		
 		data = System.getenv("JAVA_HOME");
 		System.out.println(data);
-		String[] arr = data.split("\\\\");		// Patternìœ¼ë¡œ \\ì„ ì‚¬ìš©í•´ì•¼ ë˜ê¸° ë•Œë¬¸
+		String[] arr = data.split("\\\\");		// PatternÀ¸·Î \\À» »ç¿ëÇØ¾ß µÇ±â ¶§¹®
 		System.out.println(Arrays.toString(arr));
 	}
 

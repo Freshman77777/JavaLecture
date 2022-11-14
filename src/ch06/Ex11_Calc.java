@@ -15,11 +15,11 @@ public class Ex11_Calc {
 
 }
 
-class Calc {		// default ìƒëµë˜ì–´ ìˆìŒ
+class Calc {		// default »ı·«µÇ¾î ÀÖÀ½
 	double x;				// field
 	double y;
 	
-	Calc(double x, double y) {	// ìƒì„±ì
+	Calc(double x, double y) {	// »ı¼ºÀÚ
 		this.x = x;
 		this.y = y;
 	}

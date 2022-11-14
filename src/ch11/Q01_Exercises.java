@@ -7,7 +7,7 @@ import java.util.Objects;
 public class Q01_Exercises {
 
 	public static void main(String[] args) throws UnsupportedEncodingException {
-		// ë¬¸ì œ 5
+		// ¹®Á¦ 5
 		HashSet<Student> hashSet = new HashSet<Student>();
 		hashSet.add(new Student("1"));
 		hashSet.add(new Student("1"));
@@ -16,11 +16,11 @@ public class Q01_Exercises {
 		for (Student st: hashSet)
 			System.out.println(st.hashCode());
 
-		// ë¬¸ì œ 6
-		Member member = new Member("blue", "ì´íŒŒë€");
+		// ¹®Á¦ 6
+		Member member = new Member("blue", "ÀÌÆÄ¶õ");
 		System.out.println(member);
 		
-		// ë¬¸ì œ 8
+		// ¹®Á¦ 8
 		long startTime = System.nanoTime();
 		int[] scores = new int[1000];
 		for (int i=0; i<scores.length; i++) 
@@ -31,14 +31,14 @@ public class Q01_Exercises {
 		double avg = (double) sum / scores.length;
 		System.out.println(avg);
 		long endTime = System.nanoTime();
-		System.out.println("ê²½ê³¼ì‹œê°„: " + (endTime-startTime) + " ë‚˜ë…¸ì´ˆ");
+		System.out.println("°æ°ú½Ã°£: " + (endTime-startTime) + " ³ª³ëÃÊ");
 		
-		// ë¬¸ì œ 9
+		// ¹®Á¦ 9
 		byte[] bytes = {-20, -107, -120, -21, -123, -107};
 		String str = new String(bytes, "UTF-8");
 		System.out.println(str);
 		
-		// ë¬¸ì œ 10
+		// ¹®Á¦ 10
 		StringBuilder sb = new StringBuilder();
 		for (int i=1; i<=100; i++) 
 			sb.append(String.valueOf(i));

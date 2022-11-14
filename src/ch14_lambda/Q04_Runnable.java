@@ -5,7 +5,7 @@ public class Q04_Runnable {
 	public static void main(String[] args) {
 		Thread thread = new Thread(() -> {
 			for (int i=0; i<3; i++)
-				System.out.println("ìž‘ì—… ìŠ¤ë ˆë“œê°€ ì‹¤í–‰ë©ë‹ˆë‹¤.");
+				System.out.println("ÀÛ¾÷ ½º·¹µå°¡ ½ÇÇàµË´Ï´Ù.");
 		});
 		thread.start();
 	}

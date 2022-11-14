@@ -9,3 +9,4 @@ public class Ex05_MemberReverseComparator implements Comparator<Ex05_Member> {
 		return o2.name.compareTo(o1.name);
 	}
 }
+

@@ -1,4 +1,4 @@
-package ch11.sec18_DateTime;
+package ch11.sec18_dateTime;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -11,7 +11,7 @@ public class Ex03_Info {
 		System.out.println(now);
 		
 		int year = now.getYear();
-		int month = now.getMonthValue();	// 1 ~ 12 åª›ë¯ªì“£ åª›ï¿½ï§žï¿½
+		int month = now.getMonthValue();	// 1 ~ 12 °ªÀ» °¡Áü
 		int day = now.getDayOfMonth();
 		DayOfWeek weekDay = now.getDayOfWeek();
 		System.out.println(weekDay);

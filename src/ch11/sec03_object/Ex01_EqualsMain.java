@@ -3,19 +3,19 @@ package ch11.sec03_object;
 public class Ex01_EqualsMain {
 
 	public static void main(String[] args) {
-		Member member1 = new Member("hong", "í™ê¸¸ë™");
-		Member member2 = new Member("hong", "í™ìë°”");
-		Member member3 = new Member("hong", "í™ê¸¸ë™");
+		Member member1 = new Member("hong", "È«±æµ¿");
+		Member member2 = new Member("hong", "È«ÀÚ¹Ù");
+		Member member3 = new Member("hong", "È«±æµ¿");
 		
-		// Memberì—ì„œ equals methodë¥¼ ì¬ì •ì˜í•˜ê¸° ì´ì „
-		System.out.println(member1.equals(member3));	// ì•„ë˜ ê²°ê³¼ì™€ ë™ì¼
-		System.out.println(member1 == member3);		// ì°¸ì¡°í•˜ëŠ” ì£¼ì†Œê°€ ê°™ìœ¼ëƒë¥¼ ë¹„êµ
+		// Member¿¡¼­ equals method¸¦ ÀçÁ¤ÀÇÇÏ±â ÀÌÀü
+		System.out.println(member1.equals(member3));	// ¾Æ·¡ °á°ú¿Í µ¿ÀÏ
+		System.out.println(member1 == member3);		// ÂüÁ¶ÇÏ´Â ÁÖ¼Ò°¡ °°À¸³Ä¸¦ ºñ±³
 		
-		// Member classì—ì„œ idë§Œ ê°™ìœ¼ë©´ ë™ì¼í•˜ë‹¤ê³  í•œ ê²½ìš°
+		// Member class¿¡¼­ id¸¸ °°À¸¸é µ¿ÀÏÇÏ´Ù°í ÇÑ °æ¿ì
 		System.out.println(member1.equals(member3));
 		System.out.println(member1.equals(member2));
 		
-		// Member classì—ì„œ idì™€ nameì´ ê°™ì•„ì•¼ ë™ì¼í•˜ë‹¤ê³  í•œ ê²½ìš°
+		// Member class¿¡¼­ id¿Í nameÀÌ °°¾Æ¾ß µ¿ÀÏÇÏ´Ù°í ÇÑ °æ¿ì
 		System.out.println(member1.equals(member3));
 		System.out.println(member1.equals(member2));
 		

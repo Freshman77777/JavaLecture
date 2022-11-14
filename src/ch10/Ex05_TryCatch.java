@@ -1,7 +1,7 @@
 package ch10;
 
 /**
- * ì˜ˆì™¸ ì²˜ë¦¬
+ * ¿¹¿Ü Ã³¸®
  */
 public class Ex05_TryCatch {
 
@@ -12,8 +12,8 @@ public class Ex05_TryCatch {
 			data1 = args[0];
 			data2 = args[1];
 		} catch(ArrayIndexOutOfBoundsException e) {
-			System.out.println("ë§¤ê°œë³€ìˆ˜ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤.");
-			System.out.println("ì‚¬ìš©ë²•: ë§¤ê°œë³€ìˆ˜ë¡œ ê°’ 2ê°œë¥¼ ì ìœ¼ì„¸ìš”.");
+			System.out.println("¸Å°³º¯¼ö°¡ ºÎÁ·ÇÕ´Ï´Ù.");
+			System.out.println("»ç¿ë¹ı: ¸Å°³º¯¼ö·Î °ª 2°³¸¦ ÀûÀ¸¼¼¿ä.");
 		}
 		
 		int value1 = 0, value2 = 0;
@@ -22,9 +22,9 @@ public class Ex05_TryCatch {
 			value2 = Integer.parseInt(data2);
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
-			System.out.println("ì˜ëª»ëœ ìˆ«ìì…ë‹ˆë‹¤.");
+			System.out.println("Àß¸øµÈ ¼ıÀÚÀÔ´Ï´Ù.");
 		} finally {
-			System.out.println("ë‹¤ì‹œ ì‹¤í–‰í•˜ì„¸ìš”.");
+			System.out.println("´Ù½Ã ½ÇÇàÇÏ¼¼¿ä.");
 		}
 		System.out.println(value1 + value2);
 	}

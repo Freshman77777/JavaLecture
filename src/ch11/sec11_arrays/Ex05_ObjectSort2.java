@@ -3,21 +3,21 @@ package ch11.sec11_arrays;
 import java.util.Arrays;
 
 /*
- * ë³„ë„ì˜ Comparatorë¥¼ êµ¬í˜„í•œ ê°ì²´ë¥¼ ì´ìš©
+ * º°µµÀÇ Comparator¸¦ ±¸ÇöÇÑ °´Ã¼¸¦ ÀÌ¿ë
  */
 public class Ex05_ObjectSort2 {
 
 	public static void main(String[] args) {
-		Ex05_Member member1 = new Ex05_Member(0, "ë°•ìë°”");
-		Ex05_Member member2 = new Ex05_Member(1, "ì´ìë°”");
-		Ex05_Member member3 = new Ex05_Member(2, "ê¹€ìë°”");
+		Ex05_Member member1 = new Ex05_Member(0, "¹ÚÀÚ¹Ù");
+		Ex05_Member member2 = new Ex05_Member(1, "ÀÌÀÚ¹Ù");
+		Ex05_Member member3 = new Ex05_Member(2, "±èÀÚ¹Ù");
 		Ex05_Member[] members = {member1, member2, member3};
 		
-		Arrays.sort(members, new Ex05_MemberComparator());	// ì˜¤ë¦„ ì°¨ìˆœ
+		Arrays.sort(members, new Ex05_MemberComparator());	// ¿À¸§ Â÷¼ø
 		for (Ex05_Member member : members)
 			System.out.println(member);
 		
-		Arrays.sort(members, new Ex05_MemberReverseComparator()); 	// ë‚´ë¦¼ ì°¨ìˆœ
+		Arrays.sort(members, new Ex05_MemberReverseComparator()); 	// ³»¸² Â÷¼ø
 		for (Ex05_Member member : members)
 			System.out.println(member);
 	}

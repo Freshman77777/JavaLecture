@@ -2,12 +2,12 @@ package ch07;
 
 public class Ex03_Airplane {
 	public void land() {
-		System.out.println("ì°©ë¥™í•©ë‹ˆë‹¤.");
+		System.out.println("Âø·úÇÕ´Ï´Ù.");
 	}
 	public void fly() {
-		System.out.println("ì¼ë°˜ ë¹„í–‰í•©ë‹ˆë‹¤.");
+		System.out.println("ÀÏ¹İ ºñÇàÇÕ´Ï´Ù.");
 	}
 	public void takeOff() {
-		System.out.println("ì´ë¥™í•©ë‹ˆë‹¤.");
+		System.out.println("ÀÌ·úÇÕ´Ï´Ù.");
 	}
 }

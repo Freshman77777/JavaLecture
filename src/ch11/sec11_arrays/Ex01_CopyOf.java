@@ -7,15 +7,15 @@ public class Ex01_CopyOf {
 	public static void main(String[] args) {
 		char[] src = {'J', 'A', 'V', 'A'};
 		
-		// ë°©ë²• 1
+		// ¹æ¹ı 1
 		char[] dst = Arrays.copyOf(src, src.length);
 		System.out.println(Arrays.toString(dst));
 		
-		// ë°©ë²• 2
+		// ¹æ¹ı 2
 		dst = Arrays.copyOfRange(dst, 1, 3);
 		System.out.println(Arrays.toString(dst));
 		
-		// ë°©ë²• 3, ë°›ëŠ” ë°°ì—´ì— ê¸°ì–µì¥ì†Œê°€ í™•ë³´ë˜ì–´ì•¼ í•¨
+		// ¹æ¹ı 3, ¹Ş´Â ¹è¿­¿¡ ±â¾ïÀå¼Ò°¡ È®º¸µÇ¾î¾ß ÇÔ
 		char[] newDst = new char[4];
 		System.arraycopy(src, 0, newDst, 0, src.length);
 		System.out.println(Arrays.toString(newDst));

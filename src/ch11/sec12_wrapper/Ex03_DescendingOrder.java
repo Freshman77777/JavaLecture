@@ -14,8 +14,8 @@ public class Ex03_DescendingOrder {
 		Arrays.sort(intArr, Comparator.reverseOrder());
 		System.out.println(Arrays.toString(intArr));
 		
-		// Integer Arrayë¥¼ int arrayë¡œ ë³€ê²½í•˜ëŠ” ê²ƒì€ Streamì„ í†µí•´ì„œ
-		// ì›ì‹œì ìœ¼ë¡œ ë°”ê¾¸ëŠ” ê²ƒì€ ì–¼ë§ˆë“ ì§€ ê°€ëŠ¥
+		// Integer Array¸¦ int array·Î º¯°æÇÏ´Â °ÍÀº StreamÀ» ÅëÇØ¼­
+		// ¿ø½ÃÀûÀ¸·Î ¹Ù²Ù´Â °ÍÀº ¾ó¸¶µçÁö °¡´É
 		int[] arr = new int[intArr.length];
 		for (int i = 0; i < intArr.length; i++)
 			arr[i] = intArr[i];

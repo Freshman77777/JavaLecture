@@ -1,4 +1,4 @@
-package ch11.sec18_DateTime;
+package ch11.sec18_dateTime;
 
 import java.time.DayOfWeek;
 import java.time.LocalDateTime;
@@ -10,7 +10,7 @@ public class Ex04_Operation {
 		LocalDateTime now = LocalDateTime.now();
 		System.out.println(now);
 		
-		// 
+		// Á÷Á¢ Á¶ÀÛ
 		LocalDateTime target = now		// method chaining
 				.plusYears(3)
 				.minusMonths(8)
@@ -19,12 +19,12 @@ public class Ex04_Operation {
 				.plusMinutes(10);
 		System.out.println(target);
 		
-		// 
+		// »ó´ë º¯°æ
 		target = now.with(TemporalAdjusters.lastDayOfMonth());
 		System.out.println(target);
-		target = now.with(TemporalAdjusters.next(DayOfWeek.MONDAY));	// ï¿½ë£ï¿½ë¸˜ï¿½ì‚¤ï¿½ë’— ï¿½ì¡ï¿½ìŠ‚ï¿½ì”ª
+		target = now.with(TemporalAdjusters.next(DayOfWeek.MONDAY));	// µ¹¾Æ¿À´Â ¿ù¿äÀÏ
 		System.out.println(target);
-		target = now.with(TemporalAdjusters.firstInMonth(DayOfWeek.SUNDAY));	// ï¿½ì” è¸°ëˆë––ï¿½ì“½ ï§£ï¿½ ï¿½ì”ªï¿½ìŠ‚ï¿½ì”ª
+		target = now.with(TemporalAdjusters.firstInMonth(DayOfWeek.SUNDAY));	// ÀÌ¹ø´ŞÀÇ Ã¹ ÀÏ¿äÀÏ
 		System.out.println(target);
 	}
 

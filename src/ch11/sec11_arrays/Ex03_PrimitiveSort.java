@@ -7,14 +7,14 @@ public class Ex03_PrimitiveSort {
 
 	public static void main(String[] args) {
 		int[] scores = {78, 89, 95, 65};
-		Arrays.sort(scores);			// ì˜¤ë¦„ ì°¨ìˆœìœ¼ë¡œ ì •ë ¬, ìê¸° íŒŒê´´ì (scoresê°€ ë°”ë€Œì—ˆìŒ)
+		Arrays.sort(scores);			// ¿À¸§ Â÷¼øÀ¸·Î Á¤·Ä, ÀÚ±â ÆÄ±«Àû(scores°¡ ¹Ù²î¾úÀ½)
 		System.out.println(Arrays.toString(scores));
 		
-		String[] fruits = "ê° ê·¤ ì‚¬ê³¼ ë”¸ê¸°".split(" ");
-		Arrays.sort(fruits);			// ì˜¤ë¦„ ì°¨ìˆœ(ì‚¬ì „ìˆœ)
+		String[] fruits = "°¨ ±Ö »ç°ú µş±â".split(" ");
+		Arrays.sort(fruits);			// ¿À¸§ Â÷¼ø(»çÀü¼ø)
 		System.out.println(Arrays.toString(fruits));
 		
-		Arrays.sort(fruits, Comparator.reverseOrder());		// ë‚´ë¦¼ ì°¨ìˆœ
+		Arrays.sort(fruits, Comparator.reverseOrder());		// ³»¸² Â÷¼ø
 		System.out.println(Arrays.toString(fruits));
 	}
 

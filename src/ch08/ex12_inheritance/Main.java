@@ -14,7 +14,7 @@ public class Main {
 		misc.methodC();
 		misc.methodParent();
 		
-		ic = misc;		// ë‹¤í˜•ì„±
+		ic = misc;		// ´ÙÇü¼º
 		ic.methodA();
 		ic.methodB();
 		ic.methodC();

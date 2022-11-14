@@ -1,5 +1,5 @@
 package ch08;
 
 public interface Q03_Soundable {
-	String sound();				// public abstract ìƒëµë˜ì–´ ìˆìŒ
+	String sound();				// public abstract »ı·«µÇ¾î ÀÖÀ½
 }

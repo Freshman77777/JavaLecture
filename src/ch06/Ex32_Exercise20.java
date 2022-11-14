@@ -11,9 +11,9 @@ public class Ex32_Exercise20 {
 		boolean run = true;
 		while (run) {
 			System.out.println("----------------------------------------------------------");
-			System.out.println("1.ê³„ì¢Œìƒì„± | 2.ê³„ì¢Œëª©ë¡ | 3.ì˜ˆê¸ˆ | 4.ì¶œê¸ˆ | 5.ì¢…ë£Œ");
+			System.out.println("1.°èÁÂ»ı¼º | 2.°èÁÂ¸ñ·Ï | 3.¿¹±İ | 4.Ãâ±İ | 5.Á¾·á");
 			System.out.println("----------------------------------------------------------");
-			System.out.print("ì„ íƒ> ");
+			System.out.print("¼±ÅÃ> ");
 			
 			int selectNo = Integer.parseInt(scan.nextLine());
 			switch(selectNo) {
@@ -28,53 +28,53 @@ public class Ex32_Exercise20 {
 			case 5:
 				run = false; break;
 			default:
-				System.out.println("Warning: 1ì—ì„œ 5ê¹Œì§€ì˜ ìˆ«ìë§Œ ì…ë ¥í•˜ì„¸ìš”.");
+				System.out.println("Warning: 1¿¡¼­ 5±îÁöÀÇ ¼ıÀÚ¸¸ ÀÔ·ÂÇÏ¼¼¿ä.");
 			}
 		}
-		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
+		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
 	}
 
 	private static void withdraw() {
 		System.out.println("-----------------");
-		System.out.println("ì¶œê¸ˆ");
+		System.out.println("Ãâ±İ");
 		System.out.println("-----------------");
 		
-		System.out.print("ê³„ì¢Œ ë²ˆí˜¸> ");
+		System.out.print("°èÁÂ ¹øÈ£> ");
 		String ano = scan.nextLine();
-		System.out.print("ì¶œê¸ˆì•¡> ");
+		System.out.print("Ãâ±İ¾×> ");
 		int amount = Integer.parseInt(scan.nextLine());
 		Ex32_Account account = findAccount(ano);
 		if (account == null) {
-			System.out.println("ê³„ì¢Œë²ˆí˜¸ë¥¼ í™•ì¸í•˜ì„¸ìš”.");
+			System.out.println("°èÁÂ¹øÈ£¸¦ È®ÀÎÇÏ¼¼¿ä.");
 			return;
 		}
 		
 		int balance = account.getBalance() - amount;
 		if (balance >= 0) {
 			account.setBalance(balance);
-			System.out.println("ì¶œê¸ˆì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
+			System.out.println("Ãâ±İÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
 		} else {
-			System.out.println("ì”ì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤.");
+			System.out.println("ÀÜ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
 		}
 	}
 	
 	private static void deposit() {
 		System.out.println("-----------------");
-		System.out.println("ì…ê¸ˆ");
+		System.out.println("ÀÔ±İ");
 		System.out.println("-----------------");
 		
-		System.out.print("ê³„ì¢Œ ë²ˆí˜¸> ");
+		System.out.print("°èÁÂ ¹øÈ£> ");
 		String ano = scan.nextLine();
-		System.out.print("ì…ê¸ˆì•¡> ");
+		System.out.print("ÀÔ±İ¾×> ");
 		int amount = Integer.parseInt(scan.nextLine());
 		Ex32_Account account = findAccount(ano);
 		if (account == null) {
-			System.out.println("ê³„ì¢Œë²ˆí˜¸ë¥¼ í™•ì¸í•˜ì„¸ìš”.");
+			System.out.println("°èÁÂ¹øÈ£¸¦ È®ÀÎÇÏ¼¼¿ä.");
 			return;
 		}
 		
 		account.setBalance(account.getBalance() + amount);
-		System.out.println("ì…ê¸ˆì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
+		System.out.println("ÀÔ±İÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
 	}
 	
 	private static Ex32_Account findAccount(String ano) {
@@ -89,7 +89,7 @@ public class Ex32_Exercise20 {
 	
 	private static void accountList() {
 		System.out.println("-----------------");
-		System.out.println("ê³„ì¢Œ ëª©ë¡");
+		System.out.println("°èÁÂ ¸ñ·Ï");
 		System.out.println("-----------------");
 		
 		for (int i = 0; i < index; i++) {
@@ -101,16 +101,16 @@ public class Ex32_Exercise20 {
 	
 	private static void createAccount() {
 		System.out.println("-----------------");
-		System.out.println("ê³„ì¢Œ ìƒì„±");
+		System.out.println("°èÁÂ »ı¼º");
 		System.out.println("-----------------");
 		
 		String ano = (1001 + index) + "";
-		System.out.print("ê³„ì¢Œì£¼ ì´ë¦„> ");
+		System.out.print("°èÁÂÁÖ ÀÌ¸§> ");
 		String owner = scan.nextLine();
-		System.out.print("ìµœì´ˆ ì…ê¸ˆì•¡> ");
+		System.out.print("ÃÖÃÊ ÀÔ±İ¾×> ");
 		int balance = Integer.parseInt(scan.nextLine());
 		
 		accountArray[index++] = new Ex32_Account(ano, owner, balance);
-		System.out.println("ê³„ì¢Œê°€ ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.");
+		System.out.println("°èÁÂ°¡ »ı¼ºµÇ¾ú½À´Ï´Ù.");
 	}
 }

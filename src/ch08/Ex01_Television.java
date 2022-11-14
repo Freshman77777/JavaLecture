@@ -5,12 +5,12 @@ public class Ex01_Television implements Ex01_RemoteControllable {
 	
 	@Override
 	public void turnOn() {
-		System.out.println("TVë¥¼ ì¼­ë‹ˆë‹¤.");
+		System.out.println("TV¸¦ ÄÕ´Ï´Ù.");
 	}
 
 	@Override
 	public void turnOff() {
-		System.out.println("TVë¥¼ ë•ë‹ˆë‹¤.");
+		System.out.println("TV¸¦ ²ü´Ï´Ù.");
 	}
 
 	@Override
@@ -22,6 +22,6 @@ public class Ex01_Television implements Ex01_RemoteControllable {
 		else
 			this.volume = volume;
 		
-		System.out.println("í˜„ì¬ TV ë³¼ë¥¨: " + this.volume);
+		System.out.println("ÇöÀç TV º¼·ı: " + this.volume);
 	}
 }

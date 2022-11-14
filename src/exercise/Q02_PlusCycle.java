@@ -6,7 +6,7 @@ public class Q02_PlusCycle {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.print("1 ~ 99 ì‚¬ì´ì˜ ì •ìˆ˜> ");
+		System.out.print("1 ~ 99 »çÀÌÀÇ Á¤¼ö> ");
 		int num = scan.nextInt();
 		scan.close();
 		

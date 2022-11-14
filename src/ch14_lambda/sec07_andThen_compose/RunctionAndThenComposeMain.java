@@ -13,15 +13,15 @@ public class RunctionAndThenComposeMain {
 		
 		Function<Member, String> functionAB = functionA.andThen(functionB);
 		String city = functionAB.apply(
-				new Member("í™ê¸¸ë™", "hong", new Address("í•œêµ­", "ì„œìš¸"))
+				new Member("È«±æµ¿", "hong", new Address("ÇÑ±¹", "¼­¿ï"))
 		);
-		System.out.println("ê±°ì£¼ ë„ì‹œ: " + city);
+		System.out.println("°ÅÁÖ µµ½Ã: " + city);
 		
 		functionAB = functionB.compose(functionA);
 		city = functionAB.apply(
-				new Member("í™ê¸¸ë™", "hong", new Address("í•œêµ­", "ì„œìš¸"))
+				new Member("È«±æµ¿", "hong", new Address("ÇÑ±¹", "¼­¿ï"))
 		);
-		System.out.println("ê±°ì£¼ ë„ì‹œ: " + city);
+		System.out.println("°ÅÁÖ µµ½Ã: " + city);
 	}
 
 }

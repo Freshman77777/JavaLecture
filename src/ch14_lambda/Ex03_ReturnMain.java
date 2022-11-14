@@ -19,7 +19,7 @@ public class Ex03_ReturnMain {
 		fi = (x, y) -> { return x + y; };
 		System.out.println(fi.method(3, 4));
 		
-		fi = (x, y) -> x + y;		// return ì„ ë¶™ì´ë©´ ì—ëŸ¬
+		fi = (x, y) -> x + y;		// return À» ºÙÀÌ¸é ¿¡·¯
 		System.out.println(fi.method(3, 4));
 
 		fi = (x, y) -> sum(x, y);

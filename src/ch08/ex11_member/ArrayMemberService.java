@@ -6,8 +6,8 @@ public class ArrayMemberService implements MemberService {
 	@Override
 	public void register(String id, String password, String name) {
 		Member member = findById(id);
-		if (member != null)	{		// ë™ì¼í•œ idê°€ ì´ë¯¸ ì¡´ì¬í•¨
-			System.out.println("idê°€ ì¤‘ë³µë˜ì—ˆìŠµë‹ˆë‹¤.");
+		if (member != null)	{		// µ¿ÀÏÇÑ id°¡ ÀÌ¹Ì Á¸ÀçÇÔ
+			System.out.println("id°¡ Áßº¹µÇ¾ú½À´Ï´Ù.");
 			return;
 		}
 		member = new Member(id, password, name);
@@ -31,9 +31,9 @@ public class ArrayMemberService implements MemberService {
 	@Override
 	public Member findById(String id) {
 		for (Member member : members) {
-			if (member == null)		// id ì— í•´ë‹¹í•˜ëŠ” memberë¥¼ ëª»ì°¾ê³  ëê¹Œì§€ ê°„ ê²½ìš°
+			if (member == null)		// id ¿¡ ÇØ´çÇÏ´Â member¸¦ ¸øÃ£°í ³¡±îÁö °£ °æ¿ì
 				break;
-			if (id.equals(member.getId()))		// idì— í•´ë‹¹í•˜ëŠ” memberë¥¼ ì°¾ì€ ê²½ìš°
+			if (id.equals(member.getId()))		// id¿¡ ÇØ´çÇÏ´Â member¸¦ Ã£Àº °æ¿ì
 				return member;
 		}
 		return null;
@@ -42,13 +42,13 @@ public class ArrayMemberService implements MemberService {
 	@Override
 	public boolean login(String id, String password) {
 		Member member = findById(id);
-		if (member == null)			// idì— í•´ë‹¹í•˜ëŠ” memberê°€ ì—†ëŠ” ê²½ìš°
+		if (member == null)			// id¿¡ ÇØ´çÇÏ´Â member°¡ ¾ø´Â °æ¿ì
 			return false;				
-		else {						// idì— í•´ë‹¹í•˜ëŠ” memberë¥¼ ì°¾ì€ ê²½ìš°
+		else {						// id¿¡ ÇØ´çÇÏ´Â member¸¦ Ã£Àº °æ¿ì
 			if (password.equals(member.getPassword())) {
-				System.out.println(member.getName() + "ë‹˜ í™˜ì˜í•©ë‹ˆë‹¤.");
+				System.out.println(member.getName() + "´Ô È¯¿µÇÕ´Ï´Ù.");
 				return true;
-			} else					// íŒ¨ìŠ¤ì›Œë“œê°€ í‹€ë¦° ê²½ìš°
+			} else					// ÆĞ½º¿öµå°¡ Æ²¸° °æ¿ì
 				return false;
 		}
 	}
@@ -56,6 +56,6 @@ public class ArrayMemberService implements MemberService {
 	@Override
 	public void logout(String id) {
 		Member member = findById(id);
-		System.out.println(member.getName() + "ë‹˜ ë¡œê·¸ì•„ì›ƒ ë˜ì…¨ìŠµë‹ˆë‹¤.");
+		System.out.println(member.getName() + "´Ô ·Î±×¾Æ¿ô µÇ¼Ì½À´Ï´Ù.");
 	}
 }

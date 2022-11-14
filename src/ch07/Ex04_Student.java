@@ -9,7 +9,7 @@ public class Ex04_Student extends Ex04_Person {
 	}
 
 	void study() {
-		System.out.println("ê³µë¶€ë¥¼ í•©ë‹ˆë‹¤.");
+		System.out.println("°øºÎ¸¦ ÇÕ´Ï´Ù.");
 	}
 
 	@Override

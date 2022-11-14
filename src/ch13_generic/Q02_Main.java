@@ -4,7 +4,7 @@ public class Q02_Main {
 
 	public static void main(String[] args) {
 		Q02_Container<String> container1 = new Q02_Container<>();
-		container1.set("홍길동");
+		container1.set("ȫ�浿");
 		String str = container1.get();
 		System.out.println(str);
 		
@@ -14,3 +14,6 @@ public class Q02_Main {
 		System.out.println(value);
 	}
 }
+
+
+

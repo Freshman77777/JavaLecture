@@ -1,7 +1,10 @@
 package ch08.ex13_defaultMethod;
 
 /*
- * ê¸°ì¡´ì— MyInterfaceë¥¼ êµ¬í˜„í•œ í´ë˜ìŠ¤
+package ch08.ex13_defaultMethod;
+
+/*
+ * ±âÁ¸¿¡ MyInterface¸¦ ±¸ÇöÇÑ Å¬·¡½º
  */
 public class MyClassA implements MyInterface {
 

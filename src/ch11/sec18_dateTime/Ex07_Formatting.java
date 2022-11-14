@@ -1,4 +1,4 @@
-package ch11.sec18_DateTime;
+package ch11.sec18_dateTime;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -13,7 +13,7 @@ public class Ex07_Formatting {
 		String nowStr = now.format(dtf);
 		System.out.println(nowStr);
 		
-		dtf = DateTimeFormatter.ofPattern("yyyyï¿½ë€ˆ Mï¿½ì¡ dï¿½ì”ª a hï¿½ë–† méºï¿½");
+		dtf = DateTimeFormatter.ofPattern("yyyy³â M¿ù dÀÏ a h½Ã mºĞ");
 		nowStr = now.format(dtf);
 		System.out.println(nowStr);
 	}

@@ -4,21 +4,21 @@ public class Ex01_CharAt {
 
 	public static void main(String[] args) {
 		String str1 = "A quick brown fox";
-		String str2 = "ìë°” í”„ë¡œê·¸ë˜ë°";
+		String str2 = "ÀÚ¹Ù ÇÁ·Î±×·¡¹Ö";
 		
 		System.out.println(str1.charAt(3));		// u
-		System.out.println(str2.charAt(3));		// í”„
+		System.out.println(str2.charAt(3));		// ÇÁ
 		
 		String ssn = "010624-3203125";
 		char gender = ssn.charAt(7);
 		switch(gender) {
 		case '1':
 		case '3':
-			System.out.println("ë‚¨ì");
+			System.out.println("³²ÀÚ");
 			break;
 		case '2':
 		case '4':
-			System.out.println("ì—¬ì");
+			System.out.println("¿©ÀÚ");
 			break;
 		}
 	}

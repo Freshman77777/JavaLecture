@@ -1,8 +1,8 @@
 package ch08.ex13_defaultMethod;
 
 /*
- * ìµœì´ˆì— method1()ì„ ë§Œë“¤ê³ ,
- * ë‚˜ì¤‘ì— method2()ë¥¼ ë§Œë“¤ê³  ì‹¶ì„ ê²½ìš°
+ * ÃÖÃÊ¿¡ method1()À» ¸¸µé°í,
+ * ³ªÁß¿¡ method2()¸¦ ¸¸µé°í ½ÍÀ» °æ¿ì
  */
 public interface MyInterface {
 	abstract void method1();

@@ -13,9 +13,9 @@ public class Ex16_SimpleDateFormat {
 		LocalDate today = LocalDate.now();
 		System.out.println(today);
 		
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyyë…„ MMì›” ddì¼ a hhì‹œ mmë¶„ ssì´ˆ");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy³â MM¿ù ddÀÏ a hh½Ã mmºĞ ssÃÊ");
 		System.out.println(sdf.format(now));
-		sdf = new SimpleDateFormat("yyyyë…„ MMì›” ddì¼ HHì‹œ mmë¶„ ssì´ˆ");
+		sdf = new SimpleDateFormat("yyyy³â MM¿ù ddÀÏ HH½Ã mmºĞ ssÃÊ");
 		System.out.println(sdf.format(now));
 	}
 

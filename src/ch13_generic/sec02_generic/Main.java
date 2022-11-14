@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		Box<String> box1 = new Box<String>();
-		box1.set("홍길동");
+		box1.set("ȫ�浿");
 		String name = box1.get();
 		
 		Box<Apple> box2 = new Box<>();

@@ -11,7 +11,7 @@ public class Ex06_Substring {
 		String secondPart = ssn.substring(7);
 		System.out.println(secondPart);
 		
-		// ssnì—ì„œ ìƒë…„ì›”ì¼ì„ YYYY-MM-DD í˜•íƒœë¡œ í‘œì‹œ
+		// ssn¿¡¼­ »ı³â¿ùÀÏÀ» YYYY-MM-DD ÇüÅÂ·Î Ç¥½Ã
 		String year = ssn.substring(0, 2);
 		String month = ssn.substring(2, 4);
 		String day = ssn.substring(4, 6);
@@ -20,7 +20,7 @@ public class Ex06_Substring {
 			year = "19" + year;
 		else
 			year = "20" + year;
-		System.out.println("ìƒë…„ì›”ì¼: " + year + "-" + month + "-" + day);
+		System.out.println("»ı³â¿ùÀÏ: " + year + "-" + month + "-" + day);
 	}
 
 }

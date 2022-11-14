@@ -9,7 +9,7 @@ public class Ex03_SupersonicAirplane extends Ex03_Airplane {
 	@Override
 	public void fly() {
 		if (flyMode == SUPERSONIC)
-			System.out.println("ì´ˆìŒì† ë¹„í–‰í•©ë‹ˆë‹¤.");
+			System.out.println("ÃÊÀ½¼Ó ºñÇàÇÕ´Ï´Ù.");
 		else
 			super.fly();
 	}

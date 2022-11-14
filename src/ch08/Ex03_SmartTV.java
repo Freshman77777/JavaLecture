@@ -1,24 +1,24 @@
 package ch08;
 
 /**
- * ë‹¤ì¤‘ ì¸í„°í˜ì´ìŠ¤ êµ¬í˜„ í´ë˜ìŠ¤
+ * ´ÙÁß ÀÎÅÍÆäÀÌ½º ±¸Çö Å¬·¡½º
  */
 public class Ex03_SmartTV implements Ex01_RemoteControllable, Ex03_Searchable {
 	private int volume;
 
 	@Override
 	public void search(String url) {
-		System.out.println(url + "ì„/ë¥¼ ê²€ìƒ‰í•©ë‹ˆë‹¤.");
+		System.out.println(url + "À»/¸¦ °Ë»öÇÕ´Ï´Ù.");
 	}
 	
 	@Override
 	public void turnOn() {
-		System.out.println("SmartTVë¥¼ ì¼­ë‹ˆë‹¤.");
+		System.out.println("SmartTV¸¦ ÄÕ´Ï´Ù.");
 	}
 
 	@Override
 	public void turnOff() {
-		System.out.println("SmartTVë¥¼ ë•ë‹ˆë‹¤.");
+		System.out.println("SmartTV¸¦ ²ü´Ï´Ù.");
 	}
 
 	@Override
@@ -30,6 +30,6 @@ public class Ex03_SmartTV implements Ex01_RemoteControllable, Ex03_Searchable {
 		else
 			this.volume = volume;
 		
-		System.out.println("í˜„ì¬ SmartTV ë³¼ë¥¨: " + this.volume);
+		System.out.println("ÇöÀç SmartTV º¼·ı: " + this.volume);
 	}
 }

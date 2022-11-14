@@ -5,12 +5,12 @@ import java.util.Arrays;
 public class Ex11_Split {
 
 	public static void main(String[] args) {
-		String fruits = "ê°, ë°°, ë°¤, ê·¤";
+		String fruits = "°¨, ¹è, ¹ã, ±Ö";
 		String[] fruitArr = fruits.split(", ");
 		System.out.println(Arrays.toString(fruitArr));
 		
-		String fruits2 = "ì‚¬ê³¼, ëŒ€ì¶”. ë§ê³ : í¬ë„";
-		String[] fruitArr2 = fruits2.split("[,|.|:] ");		// ì •ê·œ í‘œí˜„ì‹
+		String fruits2 = "»ç°ú, ´ëÃß. ¸Á°í: Æ÷µµ";
+		String[] fruitArr2 = fruits2.split("[,|.|:] ");		// Á¤±Ô Ç¥Çö½Ä
 		System.out.println(Arrays.toString(fruitArr2));
 		
 		String paths = System.getenv("PATH");

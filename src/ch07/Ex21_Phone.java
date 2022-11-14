@@ -1,7 +1,7 @@
 package ch07;
 
 /**
- * ì¶”ìƒ(abstract) í´ë˜ìŠ¤
+ * Ãß»ó(abstract) Å¬·¡½º
  */
 public abstract class Ex21_Phone {
 	public String owner;
@@ -11,10 +11,10 @@ public abstract class Ex21_Phone {
 	}
 	
 	void turnOn() {
-		System.out.println("í° ì „ì›ì„ ì¼­ë‹ˆë‹¤.");
+		System.out.println("Æù Àü¿øÀ» ÄÕ´Ï´Ù.");
 	}
 	void turnOff() {
-		System.out.println("í° ì „ì›ì„ ë•ë‹ˆë‹¤.");
+		System.out.println("Æù Àü¿øÀ» ²ü´Ï´Ù.");
 	}
 }
 
@@ -24,6 +24,6 @@ class SmartPhone extends Ex21_Phone {
 	}
 	
 	void internetSearch() {
-		System.out.println("ì¸í„°ë„· ê²€ìƒ‰ì„ í•©ë‹ˆë‹¤.");
+		System.out.println("ÀÎÅÍ³İ °Ë»öÀ» ÇÕ´Ï´Ù.");
 	}
 }

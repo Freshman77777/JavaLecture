@@ -4,14 +4,14 @@ public class Ex05_ThreadName {
 
 	public static void main(String[] args) {
 		Thread mainThread = Thread.currentThread();
-		System.out.println("Main ì“°ë ˆë“œ ì´ë¦„: " + mainThread.getName());
+		System.out.println("Main ¾²·¹µå ÀÌ¸§: " + mainThread.getName());
 		
-		Thread threadA = new Ex05_ThreadA();		// Thread A ìƒì„±
-		System.out.println("ì‘ì—… ì“°ë ˆë“œ ì´ë¦„: " + threadA.getName());
-		threadA.start();							// Thread A ì‹œì‘
+		Thread threadA = new Ex05_ThreadA();		// Thread A »ı¼º
+		System.out.println("ÀÛ¾÷ ¾²·¹µå ÀÌ¸§: " + threadA.getName());
+		threadA.start();							// Thread A ½ÃÀÛ
 		
 		Thread threadB = new Ex05_ThreadB();
-		System.out.println("ì‘ì—… ì“°ë ˆë“œ ì´ë¦„: " + threadB.getName());
+		System.out.println("ÀÛ¾÷ ¾²·¹µå ÀÌ¸§: " + threadB.getName());
 		threadB.start();
 	}
 

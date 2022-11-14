@@ -3,7 +3,7 @@ package exercise;
 import java.util.Arrays;
 
 /**
- * Bubble sort + Selection sort í˜¼í•©í•œ ë°©ë²•
+ * Bubble sort + Selection sort È¥ÇÕÇÑ ¹æ¹ý
  */
 public class Q08_Sort {
 
@@ -12,7 +12,7 @@ public class Q08_Sort {
 		System.out.println(Arrays.toString(a));
 		for (int i = 0; i < a.length - 1; i++) {
 			for (int k = i + 1; k < a.length; k++) {
-				if (a[i] > a[k]) {		// ì˜¤ë¦„ ì°¨ìˆœ, ë“±í˜¸ë¥¼ ë°”ê¾¸ë©´ ë‚´ë¦¼ ì°¨ìˆœ
+				if (a[i] > a[k]) {		// ¿À¸§ Â÷¼ø, µîÈ£¸¦ ¹Ù²Ù¸é ³»¸² Â÷¼ø
 					int tmp = a[i];
 					a[i] = a[k];
 					a[k] = tmp;

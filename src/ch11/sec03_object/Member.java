@@ -14,8 +14,8 @@ public class Member {
 	public boolean equals(Object obj) {
 		if (obj instanceof Member) {
 			Member member = (Member) obj;
-			if (id.equals(member.id) && name.equals(member.name)) {		// id, nameì´ ëª¨ë‘ ê°™ì•„ì•¼ true
-//			if (id.equals(member.id)) {		// idë§Œ ê°™ìœ¼ë©´ true
+			if (id.equals(member.id) && name.equals(member.name)) {		// id, nameÀÌ ¸ğµÎ °°¾Æ¾ß true
+//			if (id.equals(member.id)) {		// id¸¸ °°À¸¸é true
 				return true;
 			}
 		}

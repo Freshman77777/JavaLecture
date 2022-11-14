@@ -3,7 +3,7 @@ package ch11.sec07_string;
 public class Ex08_Trim {
 
 	public static void main(String[] args) {
-		String oldStr = "\t   ìë°” í”„ë¡œê·¸ë˜ë°  \t \r\n";
+		String oldStr = "\t   ÀÚ¹Ù ÇÁ·Î±×·¡¹Ö  \t \r\n";
 		String newStr = oldStr.trim();
 		
 		System.out.println(newStr);

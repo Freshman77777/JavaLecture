@@ -6,8 +6,8 @@ package ch10;
 public class Ex03_NumberFormat {
 
 	public static void main(String[] args) {
-		int value = Integer.parseInt("100ì›");
-		// í•´ê²°í•˜ë ¤ë©´ ì •ê·œí‘œí˜„ì‹ì„ ì‚¬ìš©í•˜ì—¬ ìˆ«ì ì´ì™¸ì˜ ë¬¸ìëŠ” ë‹¤ ì‚­ì œí•˜ë©´ ë¨.
+		int value = Integer.parseInt("100¿ø");
+		// ÇØ°áÇÏ·Á¸é Á¤±ÔÇ¥Çö½ÄÀ» »ç¿ëÇÏ¿© ¼ıÀÚ ÀÌ¿ÜÀÇ ¹®ÀÚ´Â ´Ù »èÁ¦ÇÏ¸é µÊ.
 		System.out.println(value);
 	}
 

@@ -10,9 +10,9 @@ public class Ex12_Main {
 		car.maxSpeed = 200;
 		System.out.println(car.company + ", " + car.model + ", " +
 				car.color + ", " + car.maxSpeed);
-		System.out.println(car);	// 객체명을 쓰면 자동적으로 toString() 메쏘드 호출
+		System.out.println(car);	//객체명을 쓰면 자동적으로 toString() 메쏘드 호출
 		
-		Ex12_Car bus = new Ex12_Car();	// 객체 생성
+		Ex12_Car bus = new Ex12_Car();	// 媛앹껜 �깮�꽦
 		bus.company = "기아자동차";
 		bus.model = "리무진";
 		bus.color = "분홍색";

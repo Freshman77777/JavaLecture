@@ -7,21 +7,21 @@ public class Q04_OracleDao implements Q04_DataAccessObject {
 
 	@Override
 	public void select() {
-		System.out.println("Oracle DBì—ì„œ ê²€ìƒ‰");
+		System.out.println("Oracle DB¿¡¼­ °Ë»ö");
 	}
 
 	@Override
 	public void insert() {
-		System.out.println("Oracle DBì— ì‚½ì…");
+		System.out.println("Oracle DB¿¡ »ğÀÔ");
 	}
 
 	@Override
 	public void update() {
-		System.out.println("Oracle DBë¥¼ ìˆ˜ì •");
+		System.out.println("Oracle DB¸¦ ¼öÁ¤");
 	}
 
 	@Override
 	public void delete() {
-		System.out.println("Oracle DBì—ì„œ ì‚­ì œ");
+		System.out.println("Oracle DB¿¡¼­ »èÁ¦");
 	}
 }

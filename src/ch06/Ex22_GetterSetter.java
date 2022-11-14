@@ -9,7 +9,7 @@ public class Ex22_GetterSetter {
 	public int getNumber() {
 		return number;
 	}
-	public void setNumber(int number) {	// numberëŠ” 100 ì´ìƒ 1000 ë¯¸ë§Œ
+	public void setNumber(int number) {	// number´Â 100 ÀÌ»ó 1000 ¹Ì¸¸
 		if (number >= 100 && number < 1000) {
 			this.number = number;
 			success = true;
@@ -17,11 +17,11 @@ public class Ex22_GetterSetter {
 		}
 		success = false;
 	}
-	public boolean isSuccess() {	// numberê°€ ìˆ˜ì •ë˜ë©´ true ì•„ë‹ˆë©´ falseë¥¼ ë¦¬í„´
+	public boolean isSuccess() {	// number°¡ ¼öÁ¤µÇ¸é true ¾Æ´Ï¸é false¸¦ ¸®ÅÏ
 		return success;
 	}
 	
-	public boolean isAcceptable() {		// booleanì¸ ê²½ìš°ì—ëŠ” isë¡œ ì‹œì‘í•¨
+	public boolean isAcceptable() {		// booleanÀÎ °æ¿ì¿¡´Â is·Î ½ÃÀÛÇÔ
 		return acceptable;
 	}
 	public void setAcceptable(boolean acceptable) {

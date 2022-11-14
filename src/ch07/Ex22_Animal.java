@@ -4,7 +4,7 @@ public abstract class Ex22_Animal {
 	String kind;
 	
 	public void breathe() {
-		System.out.println("ìˆ¨ì„ ì‰½ë‹ˆë‹¤.");
+		System.out.println("¼ûÀ» ½±´Ï´Ù.");
 	}
 	
 	public abstract void sound();
@@ -12,29 +12,29 @@ public abstract class Ex22_Animal {
 
 class Cow extends Ex22_Animal {
 	Cow() {
-		this.kind = "ì†Œ";
+		this.kind = "¼Ò";
 	}
 
 	@Override
 	public void sound() {
-		System.out.println("ìŒë©”~~");
+		System.out.println("À½¸Ş~~");
 	}
 }
 
 class Cock extends Ex22_Animal {
 	Cock() {
-		this.kind = "ë‹­";
+		this.kind = "´ß";
 	}
 
 	@Override
 	public void sound() {
-		System.out.println("ê¼¬ë¼ì˜¤~~");
+		System.out.println("²¿³¢¿À~~");
 	}
 }
 
-// ì¶”ìƒ ë©”ì†Œë“œë¥¼ ì¬ì •ì˜ í•˜ì§€ ì•Šìœ¼ë©´ ì¶”ìƒ í´ë˜ìŠ¤ê°€ ë¨
+// Ãß»ó ¸Ş¼Òµå¸¦ ÀçÁ¤ÀÇ ÇÏÁö ¾ÊÀ¸¸é Ãß»ó Å¬·¡½º°¡ µÊ
 abstract class Bird extends Ex22_Animal {
 	Bird() {
-		this.kind = "ì¡°ë¥˜";
+		this.kind = "Á¶·ù";
 	}
 }

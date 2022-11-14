@@ -16,13 +16,13 @@ public class Ex04_Main {
 class Bus implements Ex04_Vehicle {
 	@Override
 	public void run() {
-		System.out.println("ë²„ìŠ¤ê°€ ë‹¬ë¦½ë‹ˆë‹¤.");
+		System.out.println("¹ö½º°¡ ´Ş¸³´Ï´Ù.");
 	}
 }
 
 class Taxi implements Ex04_Vehicle {
 	@Override
 	public void run() {
-		System.out.println("íƒì‹œê°€ ë‹¬ë¦½ë‹ˆë‹¤.");
+		System.out.println("ÅÃ½Ã°¡ ´Ş¸³´Ï´Ù.");
 	}
 }

@@ -1,14 +1,14 @@
 package ch07;
 
 public class Ex14_Parent {
-	String name = "ë¶€ëª¨";
+	String name = "ºÎ¸ð";
 	void parentMethod() {
 		System.out.println("Parent: " + name);
 	}
 }
 
 class Son extends Ex14_Parent {
-	String sonName = "ì•„ë“¤";
+	String sonName = "¾Æµé";
 	void sonMethod() {
 		System.out.println("Son: " + sonName);
 	}
@@ -19,7 +19,7 @@ class Son extends Ex14_Parent {
 }
 
 class Daughter extends Ex14_Parent {
-	String daughterName = "ë”¸";
+	String daughterName = "µþ";
 	void daughterMethod() {
 		System.out.println("Daughter: " + daughterName);
 	}

@@ -13,7 +13,7 @@ public class Ex07_MultiCatch2 {
 			value2 = Integer.parseInt(data2);
 			System.out.println(value1 + value2);
 //		} catch (ArrayIndexOutOfBoundsException | NumberFormatException e) {
-//			System.out.println("ë§¤ê°œë³€ìˆ˜ê°€ ë¶€ì¡±í•˜ê±°ë‚˜ ì˜ëª»ëœ ìˆ«ìì…ë‹ˆë‹¤.");
+//			System.out.println("¸Å°³º¯¼ö°¡ ºÎÁ·ÇÏ°Å³ª Àß¸øµÈ ¼ıÀÚÀÔ´Ï´Ù.");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

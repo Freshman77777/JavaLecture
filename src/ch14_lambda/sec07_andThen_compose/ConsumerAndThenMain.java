@@ -9,7 +9,7 @@ public class ConsumerAndThenMain {
 		Consumer<Member> consumerB = m -> System.out.println("ConsumerB: " + m.getId());
 		
 		Consumer<Member> consumerAB = consumerA.andThen(consumerB);
-		consumerAB.accept(new Member("홍길동", "hong", null));
+		consumerAB.accept(new Member("ȫ�浿", "hong", null));
 	}
 
 }

@@ -13,10 +13,10 @@ public class Ex06_MultiCatch {
 			value2 = Integer.parseInt(data2);
 			System.out.println(value1 + value2);
 		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("ë§¤ê°œë³€ìˆ˜ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤.");
-			System.out.println("ì‚¬ìš©ë²•: ë§¤ê°œë³€ìˆ˜ë¡œ ê°’ 2ê°œë¥¼ ì ìœ¼ì„¸ìš”.");
+			System.out.println("¸Å°³º¯¼ö°¡ ºÎÁ·ÇÕ´Ï´Ù.");
+			System.out.println("»ç¿ë¹ı: ¸Å°³º¯¼ö·Î °ª 2°³¸¦ ÀûÀ¸¼¼¿ä.");
 		} catch (NumberFormatException e) {
-			System.out.println("ì˜ëª»ëœ ìˆ«ìì…ë‹ˆë‹¤.");
+			System.out.println("Àß¸øµÈ ¼ıÀÚÀÔ´Ï´Ù.");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

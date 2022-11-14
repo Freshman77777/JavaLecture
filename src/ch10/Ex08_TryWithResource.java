@@ -7,7 +7,7 @@ import java.io.IOException;
 /*
  * try - with - resources
  * 
- * try ()ë¡œ opení•œ resourceë¥¼ ìë™ìœ¼ë¡œ close í•´ì¤Œ
+ * try ()·Î openÇÑ resource¸¦ ÀÚµ¿À¸·Î close ÇØÁÜ
  */
 public class Ex08_TryWithResource {
 

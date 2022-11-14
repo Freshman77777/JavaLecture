@@ -1,7 +1,7 @@
 package ch07;
 
 /**
- * ë‹¤í˜•ì„±(Polymorphism)
+ * ´ÙÇü¼º(Polymorphism)
  */
 public class Ex11_Polymorphism {
 
@@ -10,7 +10,7 @@ public class Ex11_Polymorphism {
 		Child1 child1 = new Child1();
 		Child2 child2 = new Child2();
 		
-		parent = child1;	// ìë™ ë³€í™˜ (ìì‹ì€ ë¶€ëª¨ì˜ íƒ€ì…ìœ¼ë¡œ ìë™ìœ¼ë¡œ ë³€í™˜ ê°€ëŠ¥)
+		parent = child1;	// ÀÚµ¿ º¯È¯ (ÀÚ½ÄÀº ºÎ¸ğÀÇ Å¸ÀÔÀ¸·Î ÀÚµ¿À¸·Î º¯È¯ °¡´É)
 		parent = child2;
 		parent = new Child1();
 	}

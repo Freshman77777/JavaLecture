@@ -13,7 +13,7 @@ public class Ex02_ArrayIndex {
 			System.out.println(args[0]);
 			System.out.println(args[1]);
 		} else {
-			System.out.println("ì‚¬ìš©ë²•: ë§¤ê°œë³€ìˆ˜ë¡œ ê°’ 2ê°œë¥¼ ì ìœ¼ì„¸ìš”.");
+			System.out.println("»ç¿ë¹ı: ¸Å°³º¯¼ö·Î °ª 2°³¸¦ ÀûÀ¸¼¼¿ä.");
 		}
 	}
 

@@ -5,7 +5,7 @@ public class Q02_MovieThread extends Thread {
 	@Override
 	public void run() {
 		for (int i=0; i<3; i++) {
-			System.out.println("ë™ì˜ìƒì„ ìž¬ìƒí•©ë‹ˆë‹¤.");
+			System.out.println("µ¿¿µ»óÀ» Àç»ýÇÕ´Ï´Ù.");
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {

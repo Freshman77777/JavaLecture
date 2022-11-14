@@ -12,8 +12,8 @@ public class Ex01_Main {
 		child.childInt = 10;
 		child.childMethod();
 		
-		child.parentInt = 30;	// ìì‹ì´ ë¶€ëª¨ì˜ í•„ë“œê°’ ìˆ˜ì • ê°€ëŠ¥
-		child.parentMethod();	// ìì‹ì´ ë¶€ëª¨ì˜ ë©”ì˜ë“œ ì‚¬ìš© ê°€ëŠ¥
+		child.parentInt = 30;	// ÀÚ½ÄÀÌ ºÎ¸ğÀÇ ÇÊµå°ª ¼öÁ¤ °¡´É
+		child.parentMethod();	// ÀÚ½ÄÀÌ ºÎ¸ğÀÇ ¸Ş½îµå »ç¿ë °¡´É
 		
 		Ex01_Child child2 = new Ex01_Child(200);
 		child2.parentMethod();

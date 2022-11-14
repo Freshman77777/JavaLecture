@@ -4,12 +4,12 @@ public class Q02_Reverse {
 
 	public static void main(String[] args) {
 		String s1 = "Hello World!";
-		String s2 = "ì•ˆë…•í•˜ì„¸ìš”?";
+		String s2 = "¾È³çÇÏ¼¼¿ä?";
 		
 		System.out.println(reverse(s1));
 		System.out.println(reverse(s2));
 		
-		System.out.println(isPalindrome("ìš°ì˜ìš°"));
+		System.out.println(isPalindrome("¿ì¿µ¿ì"));
 	}
 
 	static boolean isPalindrome(String src) {

@@ -3,7 +3,7 @@ package ch07;
 public class Ex04_Main {
 
 	public static void main(String[] args) {
-		Ex04_Student student = new Ex04_Student("í™ê¸¸ë™", "ë‚¨ì", 30, "ì»´í“¨í„°");
+		Ex04_Student student = new Ex04_Student("È«±æµ¿", "³²ÀÚ", 30, "ÄÄÇ»ÅÍ");
 		System.out.println(student);
 		
 		student.eat();

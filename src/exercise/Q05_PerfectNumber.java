@@ -1,11 +1,11 @@
 package exercise;
 
 /**
- * ìžê¸° ìžì‹ ì„ ì œì™¸í•œ ëª¨ë“  ì–‘ì˜ ì•½ìˆ˜ë“¤ì˜ í•©ì´ ìžê¸° ìžì‹ ì´ ë˜ëŠ” ìžì—°ìˆ˜ë¥¼ 
- * ì™„ì „ìˆ˜ë¼ê³  í•œë‹¤. ì˜ˆë¥¼ ë“¤ë©´, 6ê³¼ 28ì€ ì™„ì „ìˆ˜ì´ë‹¤. 
- *	6=1+2+3 // 1,2,3ì€ ê°ê° 6ì˜ ì•½ìˆ˜ 
- *	28=1+2+4+7+14 // 1,2,4,7,14ëŠ” ê°ê° 28ì˜ ì•½ìˆ˜
- * 10000 ë¯¸ë§Œì˜ ì™„ì „ìˆ˜ëŠ” ëª¨ë‘ 4ê°œê°€ ìžˆë‹¤. ì´ ì™„ì „ìˆ˜ë¥¼ êµ¬í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì‹œì˜¤.
+ * ÀÚ±â ÀÚ½ÅÀ» Á¦¿ÜÇÑ ¸ðµç ¾çÀÇ ¾à¼öµéÀÇ ÇÕÀÌ ÀÚ±â ÀÚ½ÅÀÌ µÇ´Â ÀÚ¿¬¼ö¸¦ 
+ * ¿ÏÀü¼ö¶ó°í ÇÑ´Ù. ¿¹¸¦ µé¸é, 6°ú 28Àº ¿ÏÀü¼öÀÌ´Ù. 
+ *	6=1+2+3 // 1,2,3Àº °¢°¢ 6ÀÇ ¾à¼ö 
+ *	28=1+2+4+7+14 // 1,2,4,7,14´Â °¢°¢ 28ÀÇ ¾à¼ö
+ * 10000 ¹Ì¸¸ÀÇ ¿ÏÀü¼ö´Â ¸ðµÎ 4°³°¡ ÀÖ´Ù. ÀÌ ¿ÏÀü¼ö¸¦ ±¸ÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
  */
 public class Q05_PerfectNumber {
 
@@ -29,7 +29,7 @@ public class Q05_PerfectNumber {
 	static boolean isPerfectNumber(int num) {
 		int sumOfDivisors = 0;
 		for (int i = 1; i < num; i++) {
-			if (num % i == 0)				// iê°€ numì˜ ì•½ìˆ˜
+			if (num % i == 0)				// i°¡ numÀÇ ¾à¼ö
 				sumOfDivisors += i;
 		}
 		return num == sumOfDivisors;

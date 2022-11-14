@@ -1,21 +1,21 @@
 package ch06;
 
 /**
- * ëª¸í’€ê¸° ë¬¸ì œ(22.10.28)
+ * ¸öÇ®±â ¹®Á¦(22.10.28)
  */
 public class Ex16_Main {
 
 	public static void main(String[] args) {
-		Ex16_Product prod1 = new Ex16_Product(101,"ë…¸íŠ¸ë¶",1200000,"ì»´í“¨í„°");
-		Ex16_Product prod2 = new Ex16_Product(102,"ë°ìŠ¤í¬íƒ‘",1000000,"ì»´í“¨í„°");
-		Ex16_Product prod3 = new Ex16_Product(103,"ëª¨ë‹ˆí„°",200000,"ì»´í“¨í„°");
-		Ex16_Product prod4 = new Ex16_Product(104,"TV",1500000,"ê°€ì „");
-		Ex16_Product prod5 = new Ex16_Product(105,"ì„ í’ê¸°",50000,"ê°€ì „");
+		Ex16_Product prod1 = new Ex16_Product(101,"³ëÆ®ºÏ",1200000,"ÄÄÇ»ÅÍ");
+		Ex16_Product prod2 = new Ex16_Product(102,"µ¥½ºÅ©Å¾",1000000,"ÄÄÇ»ÅÍ");
+		Ex16_Product prod3 = new Ex16_Product(103,"¸ğ´ÏÅÍ",200000,"ÄÄÇ»ÅÍ");
+		Ex16_Product prod4 = new Ex16_Product(104,"TV",1500000,"°¡Àü");
+		Ex16_Product prod5 = new Ex16_Product(105,"¼±Ç³±â",50000,"°¡Àü");
 		System.out.println(prod1);
 		
-		String[] productNames = {"ë…¸íŠ¸ë¶","ë°ìŠ¤í¬íƒ‘","ëª¨ë‹ˆí„°","TV","ì„ í’ê¸°"};
+		String[] productNames = {"³ëÆ®ºÏ","µ¥½ºÅ©Å¾","¸ğ´ÏÅÍ","TV","¼±Ç³±â"};
 		int[] productPrices = {1200000,1000000,200000,1500000,50000};
-		String[] productCategroies = {"ì»´í“¨í„°","ì»´í“¨í„°","ì»´í“¨í„°","ê°€ì „","ê°€ì „"};
+		String[] productCategroies = {"ÄÄÇ»ÅÍ","ÄÄÇ»ÅÍ","ÄÄÇ»ÅÍ","°¡Àü","°¡Àü"};
 		Ex16_Product[] products = new Ex16_Product[5];
 		for (int i=0; i<products.length; i++) {
 			products[i] = new Ex16_Product(101+i, productNames[i], productPrices[i], productCategroies[i]);

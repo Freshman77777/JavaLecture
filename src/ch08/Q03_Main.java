@@ -16,7 +16,7 @@ class Cat implements Q03_Soundable {
 
 	@Override
 	public String sound() {
-		return "鞎检樄";
+		return "具克";
 	}
 }
 
@@ -24,6 +24,6 @@ class Dog implements Q03_Soundable {
 
 	@Override
 	public String sound() {
-		return "氅嶋⿳";
+		return "港港";
 	}
 }

@@ -5,18 +5,18 @@ public class Main {
 	public static void main(String[] args) {
 		Account account = new Account();
 		
-		// ì˜ˆê¸ˆí•˜ê¸°
+		// ¿¹±ÝÇÏ±â
 		account.deposit(100000);
-		System.out.println("ìž”ê³ : " + account.getBalance());
+		System.out.println("ÀÜ°í: " + account.getBalance());
 		
-		// ì¶œê¸ˆí•˜ê¸°
+		// Ãâ±ÝÇÏ±â
 		try {
 			account.withdraw(150000);
 		} catch (BalanceInsufficientException e) {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
 		} finally {
-			System.out.println("ìž”ê³ : " + account.getBalance());
+			System.out.println("ÀÜ°í: " + account.getBalance());
 		}
 	}
 }

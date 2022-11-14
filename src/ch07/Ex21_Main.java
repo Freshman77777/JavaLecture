@@ -3,11 +3,11 @@ package ch07;
 public class Ex21_Main {
 
 	public static void main(String[] args) {
-		// ì¶”ìƒ í´ë˜ìŠ¤ëŠ” ê°ì²´í™”í•  ìˆ˜ ì—†ë‹¤.
-//		Ex21_Phone phone = new Ex21_Phone("í™ê¸¸ë™");
+		// Ãß»ó Å¬·¡½º´Â °´Ã¼È­ÇÒ ¼ö ¾ø´Ù.
+//		Ex21_Phone phone = new Ex21_Phone("È«±æµ¿");
 		
-		// ì‚¬ìš©í•˜ë ¤ë©´ ì¶”ìƒ í´ë˜ìŠ¤ë¥¼ ìƒì†ë°›ì€ í´ë˜ìŠ¤ë¥¼ ê°ì²´í™” ì‹œì¼œì•¼ í•œë‹¤.
-		SmartPhone smartPhone = new SmartPhone("í™ê¸¸ë™");
+		// »ç¿ëÇÏ·Á¸é Ãß»ó Å¬·¡½º¸¦ »ó¼Ó¹ŞÀº Å¬·¡½º¸¦ °´Ã¼È­ ½ÃÄÑ¾ß ÇÑ´Ù.
+		SmartPhone smartPhone = new SmartPhone("È«±æµ¿");
 		
 		smartPhone.turnOn();
 		smartPhone.internetSearch();
@@ -15,3 +15,4 @@ public class Ex21_Main {
 	}
 
 }
+

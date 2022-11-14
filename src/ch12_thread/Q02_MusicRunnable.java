@@ -5,7 +5,7 @@ public class Q02_MusicRunnable implements Runnable {
 	@Override
 	public void run() {
 		for (int i=0; i<3; i++) {
-			System.out.println("ìŒì•…ì„ ìž¬ìƒí•©ë‹ˆë‹¤.");
+			System.out.println("À½¾ÇÀ» Àç»ýÇÕ´Ï´Ù.");
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {

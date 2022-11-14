@@ -4,21 +4,21 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /**
- * ë¹„êµí•˜ë ¤ëŠ” Objectê°€ Comparable ì¸í„°í˜ì´ìŠ¤ë¥¼ êµ¬í˜„í•œ ê²½ìš°
+ * ºñ±³ÇÏ·Á´Â Object°¡ Comparable ÀÎÅÍÆäÀÌ½º¸¦ ±¸ÇöÇÑ °æ¿ì
  */
 public class Ex04_ObjectSort {
 
 	public static void main(String[] args) {
-		Ex04_Member member1 = new Ex04_Member(0, "ë°•ìë°”");
-		Ex04_Member member2 = new Ex04_Member(1, "ì´ìë°”");
-		Ex04_Member member3 = new Ex04_Member(2, "ê¹€ìë°”");
+		Ex04_Member member1 = new Ex04_Member(0, "¹ÚÀÚ¹Ù");
+		Ex04_Member member2 = new Ex04_Member(1, "ÀÌÀÚ¹Ù");
+		Ex04_Member member3 = new Ex04_Member(2, "±èÀÚ¹Ù");
 		Ex04_Member[] members = {member1, member2, member3};
 		
-		Arrays.sort(members);				// ì˜¤ë¦„ ì°¨ìˆœ
+		Arrays.sort(members);				// ¿À¸§ Â÷¼ø
 		for (Ex04_Member member : members)
 			System.out.println(member);
 		
-		Arrays.sort(members, Comparator.reverseOrder());	// ë‚´ë¦¼ ì°¨ìˆœ
+		Arrays.sort(members, Comparator.reverseOrder());	// ³»¸² Â÷¼ø
 		for (Ex04_Member member : members)
 			System.out.println(member);
 	}

@@ -6,16 +6,16 @@ public class Ex31_Exercise19 {
 		Ex31_Account account = new Ex31_Account();
 		
 		account.setBalance(10000);
-		System.out.println("í˜„ìž¬ ìž”ê³ : " + account.getBalance());
+		System.out.println("ÇöÀç ÀÜ°í: " + account.getBalance());
 		
 		account.setBalance(-100);
-		System.out.println("í˜„ìž¬ ìž”ê³ : " + account.getBalance());
+		System.out.println("ÇöÀç ÀÜ°í: " + account.getBalance());
 		
 		account.setBalance(2000000);
-		System.out.println("í˜„ìž¬ ìž”ê³ : " + account.getBalance());
+		System.out.println("ÇöÀç ÀÜ°í: " + account.getBalance());
 		
 		account.setBalance(300000);
-		System.out.println("í˜„ìž¬ ìž”ê³ : " + account.getBalance());
+		System.out.println("ÇöÀç ÀÜ°í: " + account.getBalance());
 	}
 
 }

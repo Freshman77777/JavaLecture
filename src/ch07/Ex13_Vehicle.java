@@ -2,20 +2,20 @@ package ch07;
 
 public class Ex13_Vehicle {
 	public void run() {
-		System.out.println("ì°¨ëŸ‰ì´ ë‹¬ë¦½ë‹ˆë‹¤.");
+		System.out.println("Â÷·®ÀÌ ´Ş¸³´Ï´Ù.");
 	}
 }
 
 class Bus extends Ex13_Vehicle {
 	@Override
 	public void run() {
-		System.out.println("ë²„ìŠ¤ê°€ ë‹¬ë¦½ë‹ˆë‹¤.");
+		System.out.println("¹ö½º°¡ ´Ş¸³´Ï´Ù.");
 	}
 }
 
 class Taxi extends Ex13_Vehicle {
 	@Override
 	public void run() {
-		System.out.println("íƒì‹œê°€ ë‹¬ë¦½ë‹ˆë‹¤.");
+		System.out.println("ÅÃ½Ã°¡ ´Ş¸³´Ï´Ù.");
 	}
 }

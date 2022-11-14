@@ -37,7 +37,7 @@ public class Ex04_MultipleReturn {
 			if (max < a)
 				max = a;
 		}
-		System.out.println("최소값: " + min);
+		System.out.println("최소값 " + min);
 		System.out.println("최대값: " + max);
 	}
 

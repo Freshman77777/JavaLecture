@@ -8,7 +8,7 @@ public class Ex01_SingleThread {
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
 		for (int i=0; i<5; i++) {
 			toolkit.beep();
-			Thread.sleep(1000); 	// 1000 ms ë§Œí¼ ì¤‘ì§€
+			Thread.sleep(1000); 	// 1000 ms ¸¸Å­ ÁßÁö
 		}
 		
 		for (int i=0; i<5; i++) {

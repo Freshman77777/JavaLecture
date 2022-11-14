@@ -13,9 +13,9 @@ public class Ex04_Person {
 	}
 	
 	void eat() {
-		System.out.println("ì‹ì‚¬ë¥¼ í•©ë‹ˆë‹¤.");
+		System.out.println("½Ä»ç¸¦ ÇÕ´Ï´Ù.");
 	}
 	void sleep() {
-		System.out.println("ì ì„ ì¡ë‹ˆë‹¤.");
+		System.out.println("ÀáÀ» Àâ´Ï´Ù.");
 	}
 }

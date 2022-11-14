@@ -7,7 +7,7 @@ public class Ex02_Misc {
 		Integer i = Integer.parseInt("300");
 		Integer k = 300;
 		
-		System.out.println(i == k);		// -128 ~ 127 ê¹Œì§€ë§Œ ì‚¬ìš© ê°€ëŠ¥
+		System.out.println(i == k);		// -128 ~ 127 ±îÁö¸¸ »ç¿ë °¡´É
 		System.out.println(i.equals(k));
 	}
 

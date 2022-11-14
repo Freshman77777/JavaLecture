@@ -5,12 +5,12 @@ public class Ex01_Audio implements Ex01_RemoteControllable {
 	
 	@Override
 	public void turnOn() {
-		System.out.println("ì˜¤ë””ì˜¤ë¥¼ ì¼­ë‹ˆë‹¤.");
+		System.out.println("¿Àµğ¿À¸¦ ÄÕ´Ï´Ù.");
 	}
 
 	@Override
 	public void turnOff() {
-		 System.out.println("ì˜¤ë””ì˜¤ë¥¼ ë•ë‹ˆë‹¤.");
+		 System.out.println("¿Àµğ¿À¸¦ ²ü´Ï´Ù.");
 	}
 
 	@Override
@@ -22,6 +22,6 @@ public class Ex01_Audio implements Ex01_RemoteControllable {
 		else
 			this.volume = volume;
 		
-		System.out.println("í˜„ì¬ ì˜¤ë””ì˜¤ ë³¼ë¥¨: " + this.volume);
+		System.out.println("ÇöÀç ¿Àµğ¿À º¼·ı: " + this.volume);
 	}
 }

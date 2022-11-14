@@ -4,7 +4,7 @@ public class Sender implements Action {
 
 	@Override
 	public void execute() {
-		System.out.println("ë°ì´í„°ë¥¼ ë³´ëƒ…ë‹ˆë‹¤.");
+		System.out.println("µ¥ÀÌÅÍ¸¦ º¸³À´Ï´Ù.");
 	}
 
 }

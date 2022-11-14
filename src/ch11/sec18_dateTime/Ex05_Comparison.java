@@ -1,4 +1,4 @@
-package ch11.sec18_DateTime;
+package ch11.sec18_dateTime;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
@@ -19,9 +19,9 @@ public class Ex05_Comparison {
 		System.out.println(startDateTime.until(endDateTime, ChronoUnit.DAYS));
 		
 		Period period = Period.between(startDateTime.toLocalDate(), endDateTime.toLocalDate());
-		System.out.println(period.getYears());		
-		System.out.println(period.getMonths());		
-		System.out.println(period.getDays());		
+		System.out.println(period.getYears());		// 몇년
+		System.out.println(period.getMonths());		// 몇개월
+		System.out.println(period.getDays());		// 몇일
 		
 		Duration duration = Duration.between(startDateTime, endDateTime);
 		System.out.println(duration.getSeconds());

@@ -3,17 +3,17 @@ package exercise;
 import java.util.HashSet;
 
 /*
- * ë‹¤ìŒê³¼ ê°™ì€ ì˜ì–´ ëŒ€ì†Œë¬¸ì, ê³µë°±ê³¼ êµ¬ë‘£ì (,.?)ìœ¼ë¡œ ì´ë£¨ì–´ì§„ ë¬¸ìì—´ì´ ì£¼ì–´ì§„ë‹¤. 
- * ì´ ë¬¸ìì—´ì—ëŠ” ëª‡ ê°œì˜ ë‹¨ì–´ê°€ ìˆì„ê¹Œ? ì´ë¥¼ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤. 
- * ë‹¨, í•œ ë‹¨ì–´ê°€ ì—¬ëŸ¬ ë²ˆ ë“±ì¥í•˜ë©´ ë“±ì¥í•œ íšŸìˆ˜ë§Œí¼ ëª¨ë‘ ì„¸ì–´ì•¼ í•œë‹¤.
- * ë¨¼ì € ì „ì²˜ë¦¬ë¶€í„° í•˜ì„¸ìš”.(, ? . ì œê±°)
+ * ´ÙÀ½°ú °°Àº ¿µ¾î ´ë¼Ò¹®ÀÚ, °ø¹é°ú ±¸µÔÁ¡(,.?)À¸·Î ÀÌ·ç¾îÁø ¹®ÀÚ¿­ÀÌ ÁÖ¾îÁø´Ù. 
+ * ÀÌ ¹®ÀÚ¿­¿¡´Â ¸î °³ÀÇ ´Ü¾î°¡ ÀÖÀ»±î? ÀÌ¸¦ ±¸ÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À. 
+ * ´Ü, ÇÑ ´Ü¾î°¡ ¿©·¯ ¹ø µîÀåÇÏ¸é µîÀåÇÑ È½¼ö¸¸Å­ ¸ğµÎ ¼¼¾î¾ß ÇÑ´Ù.
+ * ¸ÕÀú ÀüÃ³¸®ºÎÅÍ ÇÏ¼¼¿ä.(, ? . Á¦°Å)
  */
 public class Q03_CountWord {
 
 	public static void main(String[] args) {
 		String text = "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?";
 		System.out.println(text.length());
-//		String cleanText = text.replaceAll("[\\.,\\?]", "");	// êµ¬ë‘£ì  ì œê±°
+//		String cleanText = text.replaceAll("[\\.,\\?]", "");	// ±¸µÔÁ¡ Á¦°Å
 		String cleanText = text.replaceAll("[^A-Za-z -]", "");
 		String ct = text.replace(",", "")
 						.replace(".", "")
@@ -22,12 +22,12 @@ public class Q03_CountWord {
 		System.out.println(ct.length());
 		
 		String[] textArr = cleanText.split(" ");
-		System.out.println("ë‹¨ì–´ì˜ ê°¯ìˆ˜: " + textArr.length);
+		System.out.println("´Ü¾îÀÇ °¹¼ö: " + textArr.length);
 		
-		// ê³ ìœ  ë‹¨ì–´ì˜ ê°¯ìˆ˜
+		// °íÀ¯ ´Ü¾îÀÇ °¹¼ö
 		HashSet<String> hs = new HashSet<>();
 		for (String word : textArr)
 			hs.add(word.toLowerCase());
-		System.out.println("ê³ ìœ ë‹¨ì–´ì˜ ê°¯ìˆ˜: " + hs.size());
+		System.out.println("°íÀ¯´Ü¾îÀÇ °¹¼ö: " + hs.size());
 	}
 }

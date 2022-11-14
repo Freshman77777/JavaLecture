@@ -7,7 +7,7 @@ public class Ex14_Main {
 		member.setUid("admin");
 		System.out.println(member.getUid());
 		
-		member = new Ex14_Member("admin","ìš´ì˜ì","1234",30);
+		member = new Ex14_Member("admin","¿î¿µÀÚ","1234",30);
 		System.out.println(member.toString());
 	}
 

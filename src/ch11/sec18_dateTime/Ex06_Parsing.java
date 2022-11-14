@@ -1,4 +1,4 @@
-package ch11.sec18_DateTime;
+package ch11.sec18_dateTime;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

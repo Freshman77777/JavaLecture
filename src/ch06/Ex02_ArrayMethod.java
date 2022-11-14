@@ -1,7 +1,7 @@
 package ch06;
 
 /*
- * ë°°ì—´ì—ì„œ ì‚¬ìš©í•˜ë©´ ì¢‹ì„ ë²•í•œ í”„ë¡œê·¸ë¨ì„ ë©”ì˜ë“œë¡œ ë§Œë“¤ê¸°
+ * ¹è¿­¿¡¼­ »ç¿ëÇÏ¸é ÁÁÀ» ¹ıÇÑ ÇÁ·Î±×·¥À» ¸Ş½îµå·Î ¸¸µé±â
  */
 public class Ex02_ArrayMethod {
 
@@ -33,7 +33,7 @@ public class Ex02_ArrayMethod {
 		return min;
 	}
 	
-	static void printArray(int[] arr) {		// ë§¤ê°œë³€ìˆ˜ì˜ ì´ë¦„ì€ ë‹¤ë¥¸ê²Œ ì¼ë°˜ì , íƒ€ì…ì€ ë°˜ë“œì‹œ ì¼ì¹˜í•´ì•¼ í•¨
+	static void printArray(int[] arr) {		// ¸Å°³º¯¼öÀÇ ÀÌ¸§Àº ´Ù¸¥°Ô ÀÏ¹İÀû, Å¸ÀÔÀº ¹İµå½Ã ÀÏÄ¡ÇØ¾ß ÇÔ
 		for (int i = 0; i < arr.length; i++) {
 			System.out.printf("%4d", arr[i]);
 			if ((i + 1) % 4 == 0 || (i + 1) == arr.length)

@@ -4,7 +4,7 @@ public class Receiver implements Action {
 
 	@Override
 	public void execute() {
-		System.out.println("ë°ì´í„°ë¥¼ ë°›ìŠµë‹ˆë‹¤.");
+		System.out.println("µ¥ÀÌÅÍ¸¦ ¹Ş½À´Ï´Ù.");
 	}
 
 }

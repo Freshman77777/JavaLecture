@@ -3,18 +3,18 @@ package ch11.sec07_string;
 public class Ex02_Equals {
 
 	public static void main(String[] args) {
-		String str1 = "í™ê¸¸ë™";
-		String str2 = new String("í™ê¸¸ë™");
+		String str1 = "È«±æµ¿";
+		String str2 = new String("È«±æµ¿");
 		
-		if (str1 == str2)		// ì°¸ì¡°í•˜ëŠ” ì£¼ì†Œê°€ ê°™ìœ¼ëƒë¥¼ ë¹„êµ
-			System.out.println("ê°™ì€ ìŠ¤íŠ¸ë§ ê°ì²´ë¥¼ ì°¸ì¡°");
+		if (str1 == str2)		// ÂüÁ¶ÇÏ´Â ÁÖ¼Ò°¡ °°À¸³Ä¸¦ ºñ±³
+			System.out.println("°°Àº ½ºÆ®¸µ °´Ã¼¸¦ ÂüÁ¶");
 		else
-			System.out.println("ë‹¤ë¥¸ ìŠ¤íŠ¸ë§ ê°ì²´ë¥¼ ì°¸ì¡°");
+			System.out.println("´Ù¸¥ ½ºÆ®¸µ °´Ã¼¸¦ ÂüÁ¶");
 		
-		if (str1.equals(str2))	// ë¬¸ìì—´ì€ ì´ ë°©ë²•ì„ ì‚¬ìš©í•´ì•¼ í•¨
-			System.out.println("ë¬¸ìì—´ì´ ê°™ìŒ");
+		if (str1.equals(str2))	// ¹®ÀÚ¿­Àº ÀÌ ¹æ¹ıÀ» »ç¿ëÇØ¾ß ÇÔ
+			System.out.println("¹®ÀÚ¿­ÀÌ °°À½");
 		else
-			System.out.println("ë¬¸ìì—´ì´ ë‹¤ë¦„");
+			System.out.println("¹®ÀÚ¿­ÀÌ ´Ù¸§");
 	}
 
 }

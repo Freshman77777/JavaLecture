@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 public class Ex01_Pattern {
 
 	public static void main(String[] args) {
-		String regExp = "(010|02)-\\d{3,4}-\\d{4}";		// ì´ë™/ì„œìš¸ ì „í™”ë²ˆí˜¸
+		String regExp = "(010|02)-\\d{3,4}-\\d{4}";		// ÀÌµ¿/¼­¿ï ÀüÈ­¹øÈ£
 		String data1 = "02-2345-6789";
 		String data2 = "010-234-9876";
 		boolean result1 = Pattern.matches(regExp, data1);
@@ -19,7 +19,7 @@ public class Ex01_Pattern {
 		result2 = Pattern.matches(regExp, data2);
 		System.out.println(result1 + ", " + result2);
 		
-		regExp = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$";	// ìµœì†Œ 8 ì, ìµœì†Œ í•˜ë‚˜ì˜ ë¬¸ì ë° í•˜ë‚˜ì˜ ìˆ«ì
+		regExp = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$";	// ÃÖ¼Ò 8 ÀÚ, ÃÖ¼Ò ÇÏ³ªÀÇ ¹®ÀÚ ¹× ÇÏ³ªÀÇ ¼ıÀÚ
 		data1 = "abc45fgh";
 		data2 = "123asd678";
 		result1 = Pattern.matches(regExp, data1);

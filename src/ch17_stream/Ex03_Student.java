@@ -8,13 +8,15 @@ public class Ex03_Student {
 		super();
 		this.name = name;
 		this.score = score;
-		
-		public class
-		
-		
-		public class
-		
-		
 	}
 
+	public String getName() {
+		return name;
+	}
+
+	public int getScore() {
+		return score;
+	}
 }
+
+

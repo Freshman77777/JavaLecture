@@ -1,7 +1,7 @@
 package ch11.sec07_string;
 
 /**
- * ìˆ«ìê°’ì„ ë³´ë ¤í•˜ì§€ ë§ê³ , ë¶€í˜¸ë§Œ ë´ë¼
+ * ¼ıÀÚ°ªÀ» º¸·ÁÇÏÁö ¸»°í, ºÎÈ£¸¸ ºÁ¶ó
  */
 public class Ex10_CompareTo {
 
@@ -13,8 +13,8 @@ public class Ex10_CompareTo {
 		System.out.println(str1.compareTo(str2));
 		System.out.println(str1.compareToIgnoreCase(str3));
 		
-		String han1 = "ê°€ë‚˜ë‹¤";
-		String han2 = "ë¼ë§ˆë°”";
+		String han1 = "°¡³ª´Ù";
+		String han2 = "¶ó¸¶¹Ù";
 		System.out.println(han1.compareTo(han2));
 		System.out.println(str1.compareTo(han1));
 	}

@@ -7,8 +7,8 @@ import java.util.function.ToIntFunction;
 
 public class Ex06_FunctionMain {
 	private static List<Ex06_Student> list = Arrays.asList(
-			new Ex06_Student("í™ê¸¸ë™", 90, 80),
-			new Ex06_Student("ê¹€ìë°”", 85, 92)
+			new Ex06_Student("È«±æµ¿", 90, 80),
+			new Ex06_Student("±èÀÚ¹Ù", 85, 92)
 	);
 	
 	public static void printString(Function<Ex06_Student, String> f) {
@@ -32,19 +32,19 @@ public class Ex06_FunctionMain {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("í•™ìƒ ì´ë¦„");
+		System.out.println("ÇĞ»ı ÀÌ¸§");
 		printString(t -> t.getName());
 		
-		System.out.println("ì˜ì–´ ì ìˆ˜");
+		System.out.println("¿µ¾î Á¡¼ö");
 		printInt(t -> t.getEngScore());
 		
-		System.out.println("ìˆ˜í•™ ì ìˆ˜");
+		System.out.println("¼öÇĞ Á¡¼ö");
 		printInt(t -> t.getMathScore());
 		
 		double engAvg = avg(s -> s.getEngScore());
-		System.out.println("ì˜ì–´ í‰ê·  ì ìˆ˜: " + engAvg);
+		System.out.println("¿µ¾î Æò±Õ Á¡¼ö: " + engAvg);
 		
 		double mathAvg = avg(s -> s.getMathScore());
-		System.out.println("ìˆ˜í•™ í‰ê·  ì ìˆ˜: " + mathAvg);
+		System.out.println("¼öÇĞ Æò±Õ Á¡¼ö: " + mathAvg);
 	}
 }

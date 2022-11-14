@@ -1,7 +1,7 @@
 package ch10;
 
 /*
- * throws - main methodì—ì„œ ì–Œì²´ê°™ì´ ì˜ˆì™¸ë¥¼ ë– ë„˜ê¸¸ ìˆ˜ ìˆìŒ
+ * throws - main method¿¡¼­ ¾äÃ¼°°ÀÌ ¿¹¿Ü¸¦ ¶°³Ñ±æ ¼ö ÀÖÀ½
  */
 public class Ex10_Throws2 {
 
@@ -10,3 +10,4 @@ public class Ex10_Throws2 {
 	}
 
 }
+

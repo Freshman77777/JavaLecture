@@ -6,9 +6,9 @@ public class Q05_CaesarCipher {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.print("ë¬¸ìž¥ ìž…ë ¥> ");
+		System.out.print("¹®Àå ÀÔ·Â> ");
 		String plainText = scan.nextLine();
-		System.out.print("ìŠ¤í…> ");
+		System.out.print("½ºÅÜ> ");
 		int step = scan.nextInt();
 		scan.close();
 		String cipherText = plain2cipher(plainText, step);
@@ -16,7 +16,7 @@ public class Q05_CaesarCipher {
 		System.out.println(cipher2plain(cipherText, step));
 	}
 
-	/* ì•”í˜¸í™” */
+	/* ¾ÏÈ£È­ */
 	static String plain2cipher(String text, int step) {
 		char[] cipherText = new char[text.length()];
 		for (int i=0; i<text.length(); i++) {
@@ -32,7 +32,7 @@ public class Q05_CaesarCipher {
 		}
 		return new String(cipherText);
 	}
-	/* ë³µí˜¸í™” */
+	/* º¹È£È­ */
 	static String cipher2plain(String text, int step) {
 		char[] plainText = new char[text.length()];
 		for (int i=0; i<text.length(); i++) {

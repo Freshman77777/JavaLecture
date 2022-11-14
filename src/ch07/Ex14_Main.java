@@ -1,7 +1,7 @@
 package ch07;
 
 /**
- * ê°•ì œ íƒ€ì… ë³€í™˜(Casting)
+ * °­Á¦ Å¸ÀÔ º¯È¯(Casting)
  */
 public class Ex14_Main {
 
@@ -10,20 +10,20 @@ public class Ex14_Main {
 		Son son = new Son();
 		Daughter daughter = new Daughter();
 		
-		parent = son;				// ìë™ íƒ€ì… ë³€í™˜
+		parent = son;				// ÀÚµ¿ Å¸ÀÔ º¯È¯
 		parent.parentMethod();
 		
 		parent = daughter;
 		parent.parentMethod();		// name, parentMethod
 		
-		/* ê°•ì œ íƒ€ì… ë³€í™˜ - ì˜¬ë°”ë¥´ì§€ ëª»í•œ ë°©ë²• */
-//		daughter = (Daughter)parent;	// ê°•ì œ íƒ€ì… ë³€í™˜(Casting)
+		/* °­Á¦ Å¸ÀÔ º¯È¯ - ¿Ã¹Ù¸£Áö ¸øÇÑ ¹æ¹ı */
+//		daughter = (Daughter)parent;	// °­Á¦ Å¸ÀÔ º¯È¯(Casting)
 //		daughter.daughterMethod();
 //		
 //		son = (Son)parent;			// ClassCastException
 //		son.sonMethod();
 		
-		/* ê°•ì œ íƒ€ì… ë³€í™˜ - ì˜¬ë°”ë¥¸ ë°©ë²• */
+		/* °­Á¦ Å¸ÀÔ º¯È¯ - ¿Ã¹Ù¸¥ ¹æ¹ı */
 		if (parent instanceof Daughter) {	// true
 			daughter = (Daughter)parent;
 			daughter.daughterMethod();

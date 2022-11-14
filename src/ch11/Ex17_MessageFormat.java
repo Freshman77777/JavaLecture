@@ -6,15 +6,15 @@ public class Ex17_MessageFormat {
 
 	public static void main(String[] args) {
 		String id = "admin";
-		String name = "ê´€ë¦¬ì";
+		String name = "°ü¸®ÀÚ";
 		String tel = "010-2345-6789";
 		
-		String text = "íšŒì› ID: {0} \níšŒì›ì´ë¦„: {1}\nì „í™”ë²ˆí˜¸: {2}";
+		String text = "È¸¿ø ID: {0} \nÈ¸¿øÀÌ¸§: {1}\nÀüÈ­¹øÈ£: {2}";
 		String result = MessageFormat.format(text, id, name, tel);
 		System.out.println(result);
 		
 		String sql = "INSERT INTO member VALUES({0}, {1}, {2})";
-		Object[] arguments = {"admin", "ê´€ë¦¬ì", "010-2345-6789"};
+		Object[] arguments = {"admin", "°ü¸®ÀÚ", "010-2345-6789"};
 		result = MessageFormat.format(sql, arguments);
 		System.out.println(result);
 	}

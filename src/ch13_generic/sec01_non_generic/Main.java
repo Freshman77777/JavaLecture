@@ -4,11 +4,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		Box box = new Box();
-		box.set("í™ê¸¸ë™");					// ìë™ íƒ€ì… ë³€í™˜
-		String name = (String) box.get();	// ê°•ì œ íƒ€ì… ë³€í™˜
+		box.set("È«±æµ¿");					// ÀÚµ¿ Å¸ÀÔ º¯È¯
+		String name = (String) box.get();	// °­Á¦ Å¸ÀÔ º¯È¯
 //		String name = null;
 //		if (box.get() instanceof String)
-//			name = (String) box.get();		// ê°•ì œ íƒ€ì… ë³€í™˜
+//			name = (String) box.get();		// °­Á¦ Å¸ÀÔ º¯È¯
 		
 		box.set(new Apple());
 		Apple apple = (Apple) box.get();

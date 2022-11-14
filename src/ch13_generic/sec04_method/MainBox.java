@@ -7,7 +7,7 @@ public class MainBox {
 		int intValue = box1.get();
 		System.out.println(intValue);
 		
-		Box<String> box2 = Util.boxing("í™ê¸¸ë™");	// ì»´íŒŒì¼ëŸ¬ê°€ <String> ì¶”ì •
+		Box<String> box2 = Util.boxing("È«±æµ¿");	// ÄÄÆÄÀÏ·¯°¡ <String> ÃßÁ¤
 		String strValue = box2.get();
 		System.out.println(strValue);
 	}

@@ -5,18 +5,18 @@ import java.util.function.IntPredicate;
 public class Ex08_AndOrNegate {
 
 	public static void main(String[] args) {
-		// 2ì˜ ë°°ìˆ˜ ê²€ì‚¬
+		// 2ÀÇ ¹è¼ö °Ë»ç
 		IntPredicate pA = a -> a % 2 == 0;
-		// 3ì˜ ë°°ìˆ˜ ê²€ì‚¬
+		// 3ÀÇ ¹è¼ö °Ë»ç
 		IntPredicate pB = a -> a % 3 == 0;
 		
 		// and()
-		IntPredicate pAB = pA.and(pB);	// 2ì˜ ë°°ìˆ˜ì´ë©´ì„œ 3ì˜ ë°°ìˆ˜, 2ì™€ 3ì˜ ê³µë°°ìˆ˜
+		IntPredicate pAB = pA.and(pB);	// 2ÀÇ ¹è¼öÀÌ¸é¼­ 3ÀÇ ¹è¼ö, 2¿Í 3ÀÇ °ø¹è¼ö
 		System.out.println(pAB.test(6));
 		System.out.println(pAB.test(9));
 		
 		// or()
-		pAB = pA.or(pB);	// 2ì˜ ë°°ìˆ˜ì´ê±°ë‚˜ 3ì˜ ë°°ìˆ˜
+		pAB = pA.or(pB);	// 2ÀÇ ¹è¼öÀÌ°Å³ª 3ÀÇ ¹è¼ö
 		System.out.println(pAB.test(5));
 		System.out.println(pAB.test(15));
 		

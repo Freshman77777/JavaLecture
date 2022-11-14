@@ -3,16 +3,16 @@ package exercise;
 import java.util.Random;
 
 /**
- * 3ê°œì˜ ì£¼ì‚¬ìœ„ë¥¼ ë˜ì ¸ì„œ ë‹¤ìŒê³¼ ê°™ì€ ê·œì¹™ì— ë”°ë¼ ìƒê¸ˆì„ ë°›ëŠ” ê²Œìž„ì´ ìžˆë‹¤. 
- * (ì£¼ì‚¬ìœ„ì˜ ëˆˆì€ Random ê°’ì„ ì´ìš©í•œë‹¤.)
- *   1.	ê°™ì€ ëˆˆì´ 3ê°œê°€ ë‚˜ì˜¤ë©´ 10,000ì›+(ê°™ì€ ëˆˆ)Ã—1,000ì›ì˜ ìƒê¸ˆì„ ë°›ê²Œ ëœë‹¤. 
- *   2.	ê°™ì€ ëˆˆì´ 2ê°œë§Œ ë‚˜ì˜¤ëŠ” ê²½ìš°ì—ëŠ” 1,000ì›+(ê°™ì€ ëˆˆ)Ã—100ì›ì˜ ìƒê¸ˆì„ ë°›ê²Œ ëœë‹¤. 
- *   3.	ëª¨ë‘ ë‹¤ë¥¸ ëˆˆì´ ë‚˜ì˜¤ëŠ” ê²½ìš°ì—ëŠ” (ê·¸ ì¤‘ ê°€ìž¥ í° ëˆˆ)Ã—100ì›ì˜ ìƒê¸ˆì„ ë°›ê²Œ ëœë‹¤.  
- * ì˜ˆë¥¼ ë“¤ì–´, 3ê°œì˜ ëˆˆ 3, 3, 6ì´ ì£¼ì–´ì§€ë©´ ìƒê¸ˆì€ 1,000+3Ã—100ìœ¼ë¡œ ê³„ì‚°ë˜ì–´ 
- * 1,300ì›ì„ ë°›ê²Œ ëœë‹¤. ë˜ 3ê°œì˜ ëˆˆì´ 2, 2, 2ë¡œ ì£¼ì–´ì§€ë©´ 10,000+2Ã—1,000ìœ¼ë¡œ 
- * ê³„ì‚°ë˜ì–´ 12,000ì›ì„ ë°›ê²Œ ëœë‹¤. 3ê°œì˜ ëˆˆì´ 6, 2, 5ë¡œ ì£¼ì–´ì§€ë©´ 
- * ê·¸ ì¤‘ ê°€ìž¥ í° ê°’ì´ 6ì´ë¯€ë¡œ 6Ã—100ìœ¼ë¡œ ê³„ì‚°ë˜ì–´ 600ì›ì„ ìƒê¸ˆìœ¼ë¡œ ë°›ê²Œ ëœë‹¤.
- * 3ê°œ ì£¼ì‚¬ìœ„ì˜ ë‚˜ì˜¨ ëˆˆì´ ì£¼ì–´ì§ˆ ë•Œ, ìƒê¸ˆì„ ê³„ì‚°í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì‹œì˜¤.
+ * 3°³ÀÇ ÁÖ»çÀ§¸¦ ´øÁ®¼­ ´ÙÀ½°ú °°Àº ±ÔÄ¢¿¡ µû¶ó »ó±ÝÀ» ¹Þ´Â °ÔÀÓÀÌ ÀÖ´Ù. 
+ * (ÁÖ»çÀ§ÀÇ ´«Àº Random °ªÀ» ÀÌ¿ëÇÑ´Ù.)
+ *   1.	°°Àº ´«ÀÌ 3°³°¡ ³ª¿À¸é 10,000¿ø+(°°Àº ´«)¡¿1,000¿øÀÇ »ó±ÝÀ» ¹Þ°Ô µÈ´Ù. 
+ *   2.	°°Àº ´«ÀÌ 2°³¸¸ ³ª¿À´Â °æ¿ì¿¡´Â 1,000¿ø+(°°Àº ´«)¡¿100¿øÀÇ »ó±ÝÀ» ¹Þ°Ô µÈ´Ù. 
+ *   3.	¸ðµÎ ´Ù¸¥ ´«ÀÌ ³ª¿À´Â °æ¿ì¿¡´Â (±× Áß °¡Àå Å« ´«)¡¿100¿øÀÇ »ó±ÝÀ» ¹Þ°Ô µÈ´Ù.  
+ * ¿¹¸¦ µé¾î, 3°³ÀÇ ´« 3, 3, 6ÀÌ ÁÖ¾îÁö¸é »ó±ÝÀº 1,000+3¡¿100À¸·Î °è»êµÇ¾î 
+ * 1,300¿øÀ» ¹Þ°Ô µÈ´Ù. ¶Ç 3°³ÀÇ ´«ÀÌ 2, 2, 2·Î ÁÖ¾îÁö¸é 10,000+2¡¿1,000À¸·Î 
+ * °è»êµÇ¾î 12,000¿øÀ» ¹Þ°Ô µÈ´Ù. 3°³ÀÇ ´«ÀÌ 6, 2, 5·Î ÁÖ¾îÁö¸é 
+ * ±× Áß °¡Àå Å« °ªÀÌ 6ÀÌ¹Ç·Î 6¡¿100À¸·Î °è»êµÇ¾î 600¿øÀ» »ó±ÝÀ¸·Î ¹Þ°Ô µÈ´Ù.
+ * 3°³ ÁÖ»çÀ§ÀÇ ³ª¿Â ´«ÀÌ ÁÖ¾îÁú ¶§, »ó±ÝÀ» °è»êÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
  */
 public class Q01_3Dices {
 
@@ -22,9 +22,9 @@ public class Q01_3Dices {
 		int num2 = random.nextInt(6) + 1;
 		int num3 = random.nextInt(6) + 1;
 		int prize = getPrize(num1, num2, num3);
-		System.out.println("ì£¼ì‚¬ìœ„ ëˆˆ: " + num1 + ", " + num2 + ", " + num3);
-		System.out.printf("ìƒê¸ˆ: %,d%n", prize);
-		System.out.printf("ìƒê¸ˆ: %,d%n", getPrize2(num1, num2, num3));
+		System.out.println("ÁÖ»çÀ§ ´«: " + num1 + ", " + num2 + ", " + num3);
+		System.out.printf("»ó±Ý: %,d%n", prize);
+		System.out.printf("»ó±Ý: %,d%n", getPrize2(num1, num2, num3));
 	}
 
 	private static int getPrize(int num1, int num2, int num3) {

@@ -5,18 +5,18 @@ import java.io.UnsupportedEncodingException;
 public class Ex03_GetBytes {
 
 	public static void main(String[] args) throws UnsupportedEncodingException {
-		String str = "ì•ˆë…•í•˜ì„¸ìš”?";
+		String str = "¾È³çÇÏ¼¼¿ä?";
 		
 		byte[] bytes1 = str.getBytes();
-		System.out.println(bytes1.length);			// 16 (UTF-8 encoding ë˜ì–´ ìˆìŒ)
+		System.out.println(bytes1.length);			// 16 (UTF-8 encoding µÇ¾î ÀÖÀ½)
 		String strFromByteArray = new String(bytes1);
-		System.out.println(strFromByteArray);		// ì•ˆë…•í•˜ì„¸ìš”?
+		System.out.println(strFromByteArray);		// ¾È³çÇÏ¼¼¿ä?
 		System.out.println();
 		
 		byte[] bytes2 = str.getBytes("EUC-KR");
 		System.out.println(bytes2.length);
 		strFromByteArray = new String(bytes2, "EUC-KR");
-		System.out.println(strFromByteArray);		// ì•ˆë…•í•˜ì„¸ìš”?
+		System.out.println(strFromByteArray);		// ¾È³çÇÏ¼¼¿ä?
 		System.out.println();
 	}
 

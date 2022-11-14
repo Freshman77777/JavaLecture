@@ -15,13 +15,13 @@ public class Ex02_Equals {
 		dst2d[0][0] = 1;
 		System.out.println(Arrays.equals(src2d, dst2d));
 		
-		// 2ì°¨ì› ë°°ì—´, ì°¸ì¡° ë³€ìˆ˜ì— ëŒ€í•œ ë°°ì—´
+		// 2Â÷¿ø ¹è¿­, ÂüÁ¶ º¯¼ö¿¡ ´ëÇÑ ¹è¿­
 		int[][] new2d = Arrays.copyOf(src2d, src2d.length);
 		new2d[0] = Arrays.copyOf(src2d[0], src2d[0].length);
 		new2d[1] = Arrays.copyOf(src2d[1], src2d[1].length);
-		// ë°°ì—´ ë²ˆì§€ ë¹„êµ
+		// ¹è¿­ ¹øÁö ºñ±³
 		System.out.println(Arrays.equals(src2d, new2d));
-		// ë°°ì—´ì˜ ê°’ ë¹„êµ
+		// ¹è¿­ÀÇ °ª ºñ±³
 		System.out.println(Arrays.deepEquals(src2d, new2d));
 		
 		new2d[0][0] = 3;

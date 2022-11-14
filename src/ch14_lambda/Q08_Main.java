@@ -2,8 +2,8 @@ package ch14_lambda;
 
 public class Q08_Main {
 	private static Q08_Student[] students = {
-			new Q08_Student("í™ê¸¸ë™", 90, 96),
-			new Q08_Student("ê¹€ìë°”", 95, 93)
+			new Q08_Student("È«±æµ¿", 90, 96),
+			new Q08_Student("±èÀÚ¹Ù", 95, 93)
 	};
 	
 	static double avg(Q08_MyFunction<Q08_Student> fun) {

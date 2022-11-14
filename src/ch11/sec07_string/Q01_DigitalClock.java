@@ -1,7 +1,7 @@
 package ch11.sec07_string;
 
 /**
- * ë””ì§€í„¸ ì‹œê³„ì— 3ì´ í‘œì‹œë˜ëŠ” ì‹œê°„ì€ ëª‡ ì´ˆì¸ê°€?
+ * µğÁöÅĞ ½Ã°è¿¡ 3ÀÌ Ç¥½ÃµÇ´Â ½Ã°£Àº ¸î ÃÊÀÎ°¡?
  */
 public class Q01_DigitalClock {
 
@@ -14,6 +14,6 @@ public class Q01_DigitalClock {
 					seconds += 60;
 			}
 		}
-		System.out.println("ë””ì§€í„¸ ì‹œê³„ì— 3ì´ í‘œì‹œë˜ëŠ” ì‹œê°„: " + seconds + " ì´ˆ");
+		System.out.println("µğÁöÅĞ ½Ã°è¿¡ 3ÀÌ Ç¥½ÃµÇ´Â ½Ã°£: " + seconds + " ÃÊ");
 	}
 }

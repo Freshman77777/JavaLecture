@@ -14,13 +14,13 @@ public class Ex17_Main {
 		System.out.println(myArray.getAvg(intArray));
 		System.out.println(myArray.getSumOfSquare(intArray));
 		
-		// intArray ì˜ ë¶„ì‚° = E(X*X) - E(X)*E(X)
+		// intArray ÀÇ ºĞ»ê = E(X*X) - E(X)*E(X)
 		double var = myArray.getSumOfSquare(intArray) / intArray.length -
 					 myArray.getAvg(intArray) * myArray.getAvg(intArray);
 		double std = Math.sqrt(var);
-		System.out.println("í‰ê· : " + myArray.getAvg(intArray));
-		System.out.println("ë¶„ì‚°: " + var);
-		System.out.println("í‘œì¤€í¸ì°¨: " + std);
+		System.out.println("Æò±Õ: " + myArray.getAvg(intArray));
+		System.out.println("ºĞ»ê: " + var);
+		System.out.println("Ç¥ÁØÆíÂ÷: " + std);
 	}
 
 }

@@ -3,7 +3,7 @@ package ch11.sec05_system;
 public class Ex01_Time {
 
 	public static void main(String[] args) {
-		long milliTime = System.currentTimeMillis();	// 1970-01-01 00:00:00 ê¸°ì¤€
+		long milliTime = System.currentTimeMillis();	// 1970-01-01 00:00:00 ±âÁØ
 		System.out.println(milliTime);
 		long nanoTime = System.nanoTime();
 		System.out.println(nanoTime);
@@ -16,8 +16,8 @@ public class Ex01_Time {
 		
 		long time2 = System.nanoTime();
 		
-		System.out.println("1~100000 í•©: " + sum);
-		System.out.println("ì†Œìš” ì‹œê°„: " + (time2-time1) + " ë‚˜ë…¸ì´ˆ");
+		System.out.println("1~100000 ÇÕ: " + sum);
+		System.out.println("¼Ò¿ä ½Ã°£: " + (time2-time1) + " ³ª³ëÃÊ");
 	}
 
 }

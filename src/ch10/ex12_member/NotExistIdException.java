@@ -1,7 +1,7 @@
 package ch10.ex12_member;
 
 /**
- * NotExistIdException - IDЙ╟─ М▀─К╕╟ Й╡╫Л ╟ К╟°Л┐²Л▀°М┌╓К┼■ Л≤┬Л≥╦
+ * NotExistIdException - ID╟║ ф╡╦╟ ╟Ф©Л ╧ъ╩Щ╫це╟╢б ©╧©э
  */
 public class NotExistIdException extends RuntimeException {
 	NotExistIdException() {}

@@ -6,12 +6,12 @@ public class Ex12_Car {
 	String color;
 	int maxSpeed;
 	
-	Ex12_Car() {}		// ê¸°ë³¸ ìƒì„±ì, ìƒëµí•˜ë©´ ì»´íŒŒì¼ëŸ¬ê°€ ë§Œë“¤ì–´ ì¤€ë‹¤.
+	Ex12_Car() {}		// ±âº» »ı¼ºÀÚ, »ı·«ÇÏ¸é ÄÄÆÄÀÏ·¯°¡ ¸¸µé¾îÁØ´Ù.
 	Ex12_Car(String company) {
-		this(company, "ê·¸ëœì €", "ê²€ì •ìƒ‰", 200);
+		this(company, "±×·£Àú", "°ËÁ¤»ö", 200);
 	}
 	Ex12_Car(String company, String model) {
-		this(company, model, "ê²€ì •ìƒ‰", 200);
+		this(company, model, "°ËÁ¤»ö", 200);
 	}
 	Ex12_Car(String company, String model, String color) {
 		this(company, model, color, 200);

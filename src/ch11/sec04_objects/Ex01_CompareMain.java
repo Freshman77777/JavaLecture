@@ -5,10 +5,10 @@ import java.util.Objects;
 public class Ex01_CompareMain {
 
 	public static void main(String[] args) {
-		Student s1 = new Student(1, "ê¹€ìë°”");
-		Student s2 = new Student(2, "ë°•ìë°”");
-		Student s3 = new Student(3, "í™ìë°”");
-		Student s4 = new Student(2, "ì´ìë°”");
+		Student s1 = new Student(1, "±èÀÚ¹Ù");
+		Student s2 = new Student(2, "¹ÚÀÚ¹Ù");
+		Student s3 = new Student(3, "È«ÀÚ¹Ù");
+		Student s4 = new Student(2, "ÀÌÀÚ¹Ù");
 		
 		StudentComparator comp = new StudentComparator();
 		int s1s2 = Objects.compare(s1, s2, comp);

@@ -9,7 +9,7 @@ public class Ex03_Main {
 		smartTv.setVolume(4);
 		smartTv.turnOff();
 		
-		// ì¸í„°í˜ì´ìŠ¤ êµ¬í˜„ ê°ì²´ì˜ ë‹¤í˜•ì„±
+		// ÀÎÅÍÆäÀÌ½º ±¸Çö °´Ã¼ÀÇ ´ÙÇü¼º
 		Ex01_RemoteControllable rc = new Ex03_SmartTV();
 		rc.turnOn();
 		rc.setVolume(3);

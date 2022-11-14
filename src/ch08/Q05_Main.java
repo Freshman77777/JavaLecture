@@ -6,7 +6,7 @@ public class Q05_Main {
 		Q05_Action action = new Q05_Action() {
 			@Override
 			public void work() {
-				System.out.println("ë³µì‚¬ë¥¼ í•©ë‹ˆë‹¤.");
+				System.out.println("º¹»ç¸¦ ÇÕ´Ï´Ù.");
 			}
 		};
 		action.work();

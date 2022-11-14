@@ -6,23 +6,23 @@ public class Main {
 
 	public static void main(String[] args) {
 		MemberService memberService = new ArrayMemberService();
-		memberService.register("kim", "9876", "ê¹€ìë°”");
-		memberService.register("hong", "12345", "í™ê¸¸ë™");
-		memberService.register("park", "1234", "ë°•ìë°”");
+		memberService.register("kim", "9876", "±èÀÚ¹Ù");
+		memberService.register("hong", "12345", "È«±æµ¿");
+		memberService.register("park", "1234", "¹ÚÀÚ¹Ù");
 		memberService.printAllMembers();
 		System.out.println();
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.print("ì•„ì´ë””: ");
+		System.out.print("¾ÆÀÌµğ: ");
 		String id = scan.nextLine();
-		System.out.print("íŒ¨ìŠ¤ì›Œë“œ: ");
+		System.out.print("ÆĞ½º¿öµå: ");
 		String password = scan.nextLine();
 		boolean result = memberService.login(id, password);
 		if (result) {
-			System.out.println("ë¡œê·¸ì¸ ë˜ì—ˆìŠµë‹ˆë‹¤.");
+			System.out.println("·Î±×ÀÎ µÇ¾ú½À´Ï´Ù.");
 			memberService.logout(id);
 		} else {
-			System.out.println("id ë˜ëŠ” passwordê°€ ì˜¬ë°”ë¥´ì§€ ì•ŠìŠµë‹ˆë‹¤.");
+			System.out.println("id ¶Ç´Â password°¡ ¿Ã¹Ù¸£Áö ¾Ê½À´Ï´Ù.");
 		}
 		scan.close();
 	}

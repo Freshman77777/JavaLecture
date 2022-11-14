@@ -10,7 +10,7 @@ public class Ex15_Main {
 		
 		System.out.println(Ex15_Static.circleArea(10.));
 		
-		// static memberëŠ” ê°ì²´ë¥¼ ìƒì„±í•´ì„œ ì‚¬ìš©í•˜ëŠ” ê²ƒì´ ë°”ëŒì§í•˜ì§€ ì•Šë‹¤.
+		// static member´Â °´Ã¼¸¦ »ı¼ºÇØ¼­ »ç¿ëÇÏ´Â °ÍÀÌ ¹Ù¶÷Á÷ÇÏÁö ¾Ê´Ù.
 		Ex15_Static st = new Ex15_Static();
 		System.out.println(st.pi);
 		

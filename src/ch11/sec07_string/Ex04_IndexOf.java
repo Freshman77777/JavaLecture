@@ -3,16 +3,16 @@ package ch11.sec07_string;
 public class Ex04_IndexOf {
 
 	public static void main(String[] args) {
-		String str = "ìë°” í”„ë¡œê·¸ë˜ë°";
+		String str = "ÀÚ¹Ù ÇÁ·Î±×·¡¹Ö";
 		
-		int index = str.indexOf("í”„ë¡œê·¸ë˜ë°");
+		int index = str.indexOf("ÇÁ·Î±×·¡¹Ö");
 		System.out.println(index);
 		
-		// ì°¾ê³ ì í•˜ëŠ” ë¬¸ìì—´ì´ ëŒ€ìƒ ë¬¸ìì—´ì— ìˆëŠ” ê²½ìš° ë¦¬í„´ ê°’ì€ 0 ì´ìƒì„
-		if (str.indexOf("ìë°”") >= 0)
-			System.out.println("ìë°” í¬í•¨");
-		else									// -1 ì„ ë¦¬í„´
-			System.out.println("ìë°” ë¶ˆí¬í•¨");
+		// Ã£°íÀÚ ÇÏ´Â ¹®ÀÚ¿­ÀÌ ´ë»ó ¹®ÀÚ¿­¿¡ ÀÖ´Â °æ¿ì ¸®ÅÏ °ªÀº 0 ÀÌ»óÀÓ
+		if (str.indexOf("ÀÚ¹Ù") >= 0)
+			System.out.println("ÀÚ¹Ù Æ÷ÇÔ");
+		else									// -1 À» ¸®ÅÏ
+			System.out.println("ÀÚ¹Ù ºÒÆ÷ÇÔ");
 	}
 
 }

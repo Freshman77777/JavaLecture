@@ -11,7 +11,7 @@ public class Ex01_Calendar {
 		System.out.println(now);
 		
 		int year = now.get(Calendar.YEAR);
-		int month = now.get(Calendar.MONTH) + 1;	// monthëŠ” 1 ì¦ê°€ì‹œì¼œì£¼ì–´ì•¼ í•¨
+		int month = now.get(Calendar.MONTH) + 1;	// month´Â 1 Áõ°¡½ÃÄÑÁÖ¾î¾ß ÇÔ
 		int day = now.get(Calendar.DAY_OF_MONTH);
 		
 		System.out.println(year + "-" + month + "-" + day);
@@ -20,24 +20,24 @@ public class Ex01_Calendar {
 		String strWeek = null;
 		switch(week) {
 		case Calendar.MONDAY:			// 2
-			strWeek = "ì›”"; break;
+			strWeek = "¿ù"; break;
 		case Calendar.TUESDAY:			// 3
-			strWeek = "í™”"; break;
+			strWeek = "È­"; break;
 		case Calendar.WEDNESDAY:		// 4
-			strWeek = "ìˆ˜"; break;
+			strWeek = "¼ö"; break;
 		case Calendar.THURSDAY:			// 5
-			strWeek = "ëª©"; break;
+			strWeek = "¸ñ"; break;
 		case Calendar.FRIDAY:			// 6
-			strWeek = "ê¸ˆ"; break;
+			strWeek = "±İ"; break;
 		case Calendar.SATURDAY:			// 7
-			strWeek = "í† "; break;
+			strWeek = "Åä"; break;
 		default:						// 1
-			strWeek = "ì¼";
+			strWeek = "ÀÏ";
 		}
 		System.out.println(strWeek);
 		
 		int amPm = now.get(Calendar.AM_PM);
-		String strAmPm = (amPm == Calendar.AM) ? "ì˜¤ì „" : "ì˜¤í›„";
+		String strAmPm = (amPm == Calendar.AM) ? "¿ÀÀü" : "¿ÀÈÄ";
 		
 		int hour = now.get(Calendar.HOUR);
 		int hour24 = now.get(Calendar.HOUR_OF_DAY);

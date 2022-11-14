@@ -3,46 +3,46 @@ package ch13_generic.sec06_wildcard;
 import java.util.Arrays;
 
 public class Main {
-	// Person, Worker, Student, HighStudent ëª¨ë‘ ìˆ˜ê°• ê°€ëŠ¥
+	// Person, Worker, Student, HighStudent ¸ğµÎ ¼ö°­ °¡´É
 	public static void registerCourse(Course<?> course) {	
-		System.out.println(course.getName() + "ìˆ˜ê°•ìƒ: " +
+		System.out.println(course.getName() + "¼ö°­»ı: " +
 							Arrays.toString(course.getStudents()));
 	}
-	// Student, HighStudent ë§Œ ìˆ˜ê°• ê°€ëŠ¥
+	// Student, HighStudent ¸¸ ¼ö°­ °¡´É
 	public static void registerCourseStudent(Course<? extends Student> course) {
-		System.out.println(course.getName() + "ìˆ˜ê°•ìƒ: " +
+		System.out.println(course.getName() + "¼ö°­»ı: " +
 							Arrays.toString(course.getStudents()));
 	}
-	// Person, Worker ë§Œ ìˆ˜ê°• ê°€ëŠ¥
+	// Person, Worker ¸¸ ¼ö°­ °¡´É
 	public static void registerCourseWorker(Course<? super Worker> course) {
-		System.out.println(course.getName() + "ìˆ˜ê°•ìƒ: " +
+		System.out.println(course.getName() + "¼ö°­»ı: " +
 							Arrays.toString(course.getStudents()));
 	}
 	
 	public static void main(String[] args) {
-		Course<Person> personCourse = new Course<> ("ì¼ë°˜ì¸ ê³¼ì •, ", 5);
-		personCourse.add(new Person("ì¼ë°˜ì¸"));
-		personCourse.add(new Worker("ì§ì¥ì¸"));
-		personCourse.add(new Student("í•™ìƒ"));
-		personCourse.add(new HighStudent("ê³ ë“±í•™ìƒ"));
+		Course<Person> personCourse = new Course<> ("ÀÏ¹İÀÎ °úÁ¤, ", 5);
+		personCourse.add(new Person("ÀÏ¹İÀÎ"));
+		personCourse.add(new Worker("Á÷ÀåÀÎ"));
+		personCourse.add(new Student("ÇĞ»ı"));
+		personCourse.add(new HighStudent("°íµîÇĞ»ı"));
 		
-		Course<Worker> workerCourse = new Course<> ("ì§ì¥ì¸ ê³¼ì •, ", 5);
-//		workerCourse.add(new Person("ì¼ë°˜ì¸"));
-		workerCourse.add(new Worker("ì§ì¥ì¸"));
-//		workerCourse.add(new Student("í•™ìƒ"));
-//		workerCourse.add(new HighStudent("ê³ ë“±í•™ìƒ"));
+		Course<Worker> workerCourse = new Course<> ("Á÷ÀåÀÎ °úÁ¤, ", 5);
+//		workerCourse.add(new Person("ÀÏ¹İÀÎ"));
+		workerCourse.add(new Worker("Á÷ÀåÀÎ"));
+//		workerCourse.add(new Student("ÇĞ»ı"));
+//		workerCourse.add(new HighStudent("°íµîÇĞ»ı"));
 		
-		Course<Student> studentCourse = new Course<> ("í•™ìƒ ê³¼ì •, ", 5);
-//		studentCourse.add(new Person("ì¼ë°˜ì¸"));
-//		studentCourse.add(new Worker("ì§ì¥ì¸"));
-		studentCourse.add(new Student("í•™ìƒ"));
-		studentCourse.add(new HighStudent("ê³ ë“±í•™ìƒ"));
+		Course<Student> studentCourse = new Course<> ("ÇĞ»ı °úÁ¤, ", 5);
+//		studentCourse.add(new Person("ÀÏ¹İÀÎ"));
+//		studentCourse.add(new Worker("Á÷ÀåÀÎ"));
+		studentCourse.add(new Student("ÇĞ»ı"));
+		studentCourse.add(new HighStudent("°íµîÇĞ»ı"));
 		
-		Course<HighStudent> highStudentCourse = new Course<> ("ê³ ë“±í•™ìƒ ê³¼ì •, ", 5);
-//		highStudentCourse.add(new Person("ì¼ë°˜ì¸"));
-//		highStudentCourse.add(new Worker("ì§ì¥ì¸"));
-//		highStudentCourse.add(new Student("í•™ìƒ"));
-		highStudentCourse.add(new HighStudent("ê³ ë“±í•™ìƒ"));
+		Course<HighStudent> highStudentCourse = new Course<> ("°íµîÇĞ»ı °úÁ¤, ", 5);
+//		highStudentCourse.add(new Person("ÀÏ¹İÀÎ"));
+//		highStudentCourse.add(new Worker("Á÷ÀåÀÎ"));
+//		highStudentCourse.add(new Student("ÇĞ»ı"));
+		highStudentCourse.add(new HighStudent("°íµîÇĞ»ı"));
 		
 		registerCourse(personCourse);
 		registerCourse(workerCourse);
@@ -63,3 +63,4 @@ public class Main {
 	}
 
 }
+

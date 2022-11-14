@@ -1,7 +1,7 @@
 package ch07;
 
 /**
- * ë‹¤í˜•ì„± - Animal ì‚¬ë¡€
+ * ´ÙÇü¼º - Animal »ç·Ê
  */
 public class Ex12_Animal {
 
@@ -14,7 +14,7 @@ public class Ex12_Animal {
 		Animal animal2 = new Dog();
 		animal2.animalMethod();
 		
-//		animal.catMethod();		// ì‚¬ìš©í•  ìˆ˜ ì—†ìŒ
+//		animal.catMethod();		// »ç¿ëÇÒ ¼ö ¾øÀ½
 		
 		Object obj = new Animal();
 		obj = new Cow();
@@ -27,7 +27,7 @@ class Animal {
 	int animalField;
 	void animalMethod() {
 		System.out.println("Animal: " + animalField);
-		System.out.println("ë™ë¬¼ì´ ì†Œë¦¬ë¥¼ ëƒ…ë‹ˆë‹¤.");
+		System.out.println("µ¿¹°ÀÌ ¼Ò¸®¸¦ ³À´Ï´Ù.");
 	}
 }
 
@@ -39,7 +39,7 @@ class Cat extends Animal {
 	@Override
 	void animalMethod() {
 		System.out.println("Cat: " + animalField);
-		System.out.println("ì•¼ì˜¹~~");
+		System.out.println("¾ß¿Ë~~");
 	}
 }
 class Dog extends Animal {
@@ -50,6 +50,6 @@ class Dog extends Animal {
 	@Override
 	void animalMethod() {
 		System.out.println("Dog: " + animalField);
-		System.out.println("ë©ë©!!");
+		System.out.println("¸Û¸Û!!");
 	}
 }

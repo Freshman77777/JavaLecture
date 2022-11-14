@@ -5,14 +5,14 @@ public class Main {
 	public static void main(String[] args) {
 		Product<Tv, String> product1 = new Product<>();
 		product1.setKind(new Tv());
-		product1.setModel("ìŠ¤ë§ˆíŠ¸ TV");
+		product1.setModel("½º¸¶Æ® TV");
 		Tv tv = product1.getKind();
 		String tvModel = product1.getModel();
 		System.out.println(tvModel);
 		
 		Product<Car, String> product2 = new Product<>();
 		product2.setKind(new Car());
-		product2.setModel("ì „ë¥œêµ¬ë™");
+		product2.setModel("Àü·û±¸µ¿");
 		Car car = product2.getKind();
 		String carModel = product2.getModel();
 		System.out.println(carModel);

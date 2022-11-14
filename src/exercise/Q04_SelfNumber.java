@@ -38,13 +38,13 @@ public class Q04_SelfNumber {
 					selfNum[dn] = NOT_SELF_NUMBER;
 			}
 		}
-		/* SELF_NUMBER ê°’ìœ¼ë¡œë§Œ ëœ ë°°ì—´ì„ ë§Œë“¤ê¸° ìœ„í•œ ì¤€ë¹„ */
+		/* SELF_NUMBER °ªÀ¸·Î¸¸ µÈ ¹è¿­À» ¸¸µé±â À§ÇÑ ÁØºñ */
 		int count = 0;
 		for (int i = 1; i <= 99; i++) {
 			if (selfNum[i] == SELF_NUMBER)
 				count++;
 		}
-		/* SELF_NUMBER ê°’ìœ¼ë¡œë§Œ ì´ë£¨ì–´ì§„ ë°°ì—´ ë§Œë“¤ê¸° */
+		/* SELF_NUMBER °ªÀ¸·Î¸¸ ÀÌ·ç¾îÁø ¹è¿­ ¸¸µé±â */
 		int[] result = new int[count];
 		for (int i = 1, index = 0; i <= 99; i++) {
 			if (selfNum[i] == SELF_NUMBER)

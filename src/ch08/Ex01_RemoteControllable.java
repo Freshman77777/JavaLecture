@@ -1,28 +1,28 @@
 package ch08;
 
 /**
- * ì¸í„°í˜ì´ìŠ¤ ì„ ì–¸
+ * ÀÎÅÍÆäÀÌ½º ¼±¾ğ
  */
 public interface Ex01_RemoteControllable {
-	// ìƒìˆ˜(Constant)
-	public int MAX_VOLUME = 10;				// static final ìƒëµë˜ì–´ ìˆìŒ
+	// »ó¼ö(Constant)
+	public int MAX_VOLUME = 10;				// static final »ı·«µÇ¾î ÀÖÀ½
 	public static final int MIN_VOLUME = 0;
 	
-	// ì¶”ìƒ ë©”ì†Œë“œ
-	void turnOn();			// public abstract ìƒëµë˜ì–´ ìˆìŒ
+	// Ãß»ó ¸Ş¼Òµå
+	void turnOn();			// public abstract »ı·«µÇ¾î ÀÖÀ½
 	public abstract void turnOff();
 	public abstract void setVolume(int volume);
 	
-	// ë””í´íŠ¸ ë©”ì†Œë“œ(Java 1.8 ë¶€í„° ì§€ì›) - í´ë˜ìŠ¤ ê°ì²´ì˜ ì¸ìŠ¤í„´ìŠ¤ ë©”ì†Œë“œ
+	// µğÆúÆ® ¸Ş¼Òµå(Java 1.8 ºÎÅÍ Áö¿ø) - Å¬·¡½º °´Ã¼ÀÇ ÀÎ½ºÅÏ½º ¸Ş¼Òµå
 	public default void setMute(boolean mute) {
 		if (mute)
-			System.out.println("ë¬´ìŒ ì²˜ë¦¬í•©ë‹ˆë‹¤.");
+			System.out.println("¹«À½ Ã³¸®ÇÕ´Ï´Ù.");
 		else
-			System.out.println("ë¬´ìŒ í•´ì œí•©ë‹ˆë‹¤.");
+			System.out.println("¹«À½ ÇØÁ¦ÇÕ´Ï´Ù.");
 	}
 	
-	// ì •ì  ë©”ì†Œë“œ(Java 1.8ë¶€í„° ì§€ì›)
+	// Á¤Àû ¸Ş¼Òµå(Java 1.8ºÎÅÍ Áö¿ø)
 	public static void changeBattery() {
-		System.out.println("ê±´ì „ì§€ë¥¼ êµí™˜í•©ë‹ˆë‹¤.");
+		System.out.println("°ÇÀüÁö¸¦ ±³È¯ÇÕ´Ï´Ù.");
 	}
 }

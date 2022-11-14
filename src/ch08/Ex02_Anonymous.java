@@ -6,17 +6,17 @@ public class Ex02_Anonymous {
 		Ex01_RemoteControllable rc = new Ex01_RemoteControllable() {
 			@Override
 			public void turnOn() {
-				System.out.println("ìµëª…êµ¬í˜„ê°ì²´ turnOn()");
+				System.out.println("ÀÍ¸í±¸Çö°´Ã¼ turnOn()");
 			}
 
 			@Override
 			public void turnOff() {
-				System.out.println("ìµëª…êµ¬í˜„ê°ì²´ turnOff()");
+				System.out.println("ÀÍ¸í±¸Çö°´Ã¼ turnOff()");
 			}
 
 			@Override
 			public void setVolume(int volume) {
-				System.out.println("ìµëª…êµ¬í˜„ê°ì²´ setVolume(" + volume + ")");
+				System.out.println("ÀÍ¸í±¸Çö°´Ã¼ setVolume(" + volume + ")");
 			}
 		};
 		rc.turnOn();

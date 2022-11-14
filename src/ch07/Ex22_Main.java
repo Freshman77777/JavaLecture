@@ -9,7 +9,7 @@ public class Ex22_Main {
 		cock.sound();
 		System.out.println();
 		
-		// ë³€ìˆ˜ì˜ ìë™ íƒ€ì… ë³€í™˜
+		// º¯¼öÀÇ ÀÚµ¿ Å¸ÀÔ º¯È¯
 //		Ex22_Animal animal = new Ex22_Animal();
 		Ex22_Animal animal = null;
 		animal = new Cow();
@@ -18,7 +18,7 @@ public class Ex22_Main {
 		animal.sound();
 		System.out.println();
 		
-		// ë§¤ê°œë³€ìˆ˜ì˜ ìë™ íƒ€ì… ë³€í™˜
+		// ¸Å°³º¯¼öÀÇ ÀÚµ¿ Å¸ÀÔ º¯È¯
 		animalSound(new Cow());
 		animalSound(new Cock());
 	}

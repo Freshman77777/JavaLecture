@@ -1,7 +1,7 @@
 package ch13_generic.q04;
 
 public class Util {
-	// ë‹¤í˜•ì„± ì´ìš©
+	// ´ÙÇü¼º ÀÌ¿ë
 //	public static <K, V> V getValue(Pair<K, V> p, K k) {
 //		if (p.getKey().equals(k)) {
 //			return p.getValue();
@@ -10,7 +10,7 @@ public class Util {
 //		}
 //	}
 	
-	// Restricted ì´ìš©
+	// Restricted ÀÌ¿ë
 	public static <P extends Pair<K, V>, K, V> V getValue(P p, K k) {
 		if (p.getKey().equals(k)) {
 			return p.getValue();

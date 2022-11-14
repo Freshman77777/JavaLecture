@@ -3,8 +3,8 @@ package ch11.sec07_string;
 public class Ex05_Replace {
 
 	public static void main(String[] args) {
-		String oldStr = "ìë°”ëŠ” ê°ì²´ì§€í–¥ì–¸ì–´ì´ê³ , ìë°”ëŠ” í’ë¶€í•œ APIë¥¼ ì§€ì›í•©ë‹ˆë‹¤.";
-		String newStr = oldStr.replace("ìë°”", "Java");
+		String oldStr = "ÀÚ¹Ù´Â °´Ã¼ÁöÇâ¾ğ¾îÀÌ°í, ÀÚ¹Ù´Â Ç³ºÎÇÑ API¸¦ Áö¿øÇÕ´Ï´Ù.";
+		String newStr = oldStr.replace("ÀÚ¹Ù", "Java");
 		
 		System.out.println(oldStr);
 		System.out.println(newStr);
