@@ -3,7 +3,7 @@ package mysql.customer;
 import java.time.LocalDate;
 
 /**
- * DTO(Data Transfer Object)
+ * Player(Data Transfer Object)
  */
 public class Customer {
 	private String uid;

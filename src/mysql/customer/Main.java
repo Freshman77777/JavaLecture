@@ -14,13 +14,18 @@ public class Main {
 //		Customer c2 = new Customer("james","제임스");
 //		dao.insertCustomer(c2);
 		
-		Customer c3 = dao.getCustomer("james");
-		System.out.println(c3);
-		System.out.println();
+//		Customer c3 = dao.getCustomer("james");
+//		System.out.println(c3);
+//		System.out.println();
+//		
+//		c3.setName("재임수");
+//		c3.setRegDate(LocalDate.parse("2022-11-01"));
+//		dao.updateCustomer(c3);
 		
-		c3.setName("재임수");
-		c3.setRegDate(LocalDate.parse("2022-11-01"));
-		dao.updateCustomer(c3);
+//		dao.deleteCustomer("james");
+		
+		Customer c2 = new Customer("maria","마리아");
+		dao.insertCustomer(c2);
 		
 		List<Customer> list = dao.getCustomers();
 		for (Customer c: list)

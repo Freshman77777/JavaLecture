@@ -1,4 +1,4 @@
-package mysql.customer;
+package mysql.SoccerPlayer;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -12,6 +12,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+
+import mysql.customer.Customer;
 
 /**
  * DAO(Data Access Object)
@@ -41,17 +43,7 @@ public class DAO {
 }
 	public Connection myGetConnection() {
 		Connection conn = null;
-		try {
-//			InputStream is = new FileInputStream("/Workspace/mysql.properties");
-//			Properties props = new Properties();
-//			props.load(is);
-//			is.close();
-//			
-//			String host = props.getProperty("host");
-//			String user = props.getProperty("user");
-//			String password = props.getProperty("password");
-//			String database = props.getProperty("database");
-//			String port = props.getProperty("port", "3306");
+		try {			
 			String connStr = "jdbc:mysql://" + host + ":" + port + "/" + database;
 			conn = DriverManager.getConnection(connStr, user, password);
 		} catch (Exception e) {
@@ -60,14 +52,14 @@ public class DAO {
 		return conn;
 	}
 	
-	public void deleteCustomer(String uid) {
+	public void deletePlayer(int backNumber) {
 		Connection conn = myGetConnection();
-		String sql = "UPDATE customer SET isDeleted=1 WHERE uid=?;";
+		String sql = "UPDATE customer SET isDeleted=0 WHERE uid=?;";
 		try {
 			PreparedStatement pStmt = conn.prepareStatement(sql);
-			pStmt.setString(1, uid);
+			pStmt.setInt(1, backNumber);
 			
-			// Delete 대신에 isDeleted 필드를 1로 변경
+			
 			pStmt.executeUpdate();
 			pStmt.close();
 			conn.close();
@@ -76,17 +68,19 @@ public class DAO {
 		}
 	}
 	
-	public void updateCustomer(Customer c) {
+	public void updatePlayer(Player p) {
 		Connection conn = myGetConnection();
-		String sql = "UPDATE customer SET name=?, regDate=?, isDeleted=? WHERE uid=?;";
+		String sql = "UPDATE player SET name=?, positon=?, birDate=?, height=? , isDeleted=? WHERE backNumber=?;";
 		try {
 			PreparedStatement pStmt = conn.prepareStatement(sql);
-			pStmt.setString(1, c.getName());
-			pStmt.setString(2, c.getRegDate().toString());
-			pStmt.setInt(3, c.getIsDeleted());
-			pStmt.setString(4, c.getUid()); 	// ? 순서대로 번호가 매겨짐(1번부터)
+			pStmt.setString(1, p.getName());
+			pStmt.setString(2, p.getPosition().toString());
+			pStmt.setString(3, p.getBirDate().toString());
+			pStmt.setInt(4, p.getHeight());
+			pStmt.setInt(5, p.getIsDeleted()); 	
+			pStmt.setInt(6, p.getBackNumber()); 	
 			
-			// Update 실행
+			
 			pStmt.executeUpdate();
 			pStmt.close();
 			conn.close();
@@ -95,21 +89,23 @@ public class DAO {
 		}
 	}
 	
-	public Customer getCustomer(String uid) {
+	public Player getPlayer(int backNumber) {
 		Connection conn = myGetConnection();
-		String sql = "SELECT * FROM customer WHERE uid=?;";
-		Customer c = new Customer();
+		String sql = "SELECT * FROM Player WHERE backNumber=?;";
+		Player p = new Player();
 		try {
 			PreparedStatement pStmt = conn.prepareStatement(sql);
-			pStmt.setString(1, uid);
+			pStmt.setInt(1, backNumber);
 			
-			// Select 실행
+			
 			ResultSet rs = pStmt.executeQuery();
 			while (rs.next()) {
-				c.setUid(rs.getString(1));
-				c.setName(rs.getString(2));
-				c.setRegDate(LocalDate.parse(rs.getString(3)));
-				c.setIsDeleted(rs.getInt(4));
+				p.setBackNumber(rs.getBackNumber(1)); 
+				p.setName(rs.getName(2));
+				p.setPosition(rs.getPosition.toString(3));
+				p.setBirDate(rs.getBirDate().toString(4));
+				p.setHeight(rs.getHeight(5));
+				p.setIsDeleted(rs.getIsDeleted(6)); 	
 			}
 			rs.close();
 			pStmt.close();
@@ -117,25 +113,27 @@ public class DAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return c;
+		return p;
 	}
 	
-	public List<Customer> getCustomers() {
+	public List<Player> getPlayers() {
 		Connection conn = myGetConnection();
-		List<Customer> list = new ArrayList<>();
-		String sql = "SELECT * FROM customer WHERE isDeleted=0;";
+		List<Player> list = new ArrayList<>();
+		String sql = "SELECT * FROM player WHERE isDeleted=0;";
 		try {
 			Statement stmt = conn.createStatement();
 			
 			// Select 실행
 			ResultSet rs = stmt.executeQuery(sql);
 			while (rs.next()) {
-				Customer c = new Customer();
-				c.setUid(rs.getString(1));
-				c.setName(rs.getString(2));
-				c.setRegDate(LocalDate.parse(rs.getString(3)));
-				c.setIsDeleted(rs.getInt(4));
-				list.add(c);
+				Player p= new Player();
+				p.setBackNumber(rs.getBackNumber(1)); 
+				p.setName(rs.getName(2));
+				p.setPosition(rs.getPosition.toString(3));
+				p.setBirDate(rs.getBirDate().toString(4));
+				p.setHeight(rs.getHeight(5));
+				p.setIsDeleted(rs.getIsDeleted(6)); 
+				list.add(p);
 			}
 			rs.close();
 			stmt.close();
@@ -145,14 +143,16 @@ public class DAO {
 		} 
 		return list;
 	}
-	
-	public void insertCustomer(Customer c) {
+	public void insertPlayer(Player p) {
 		Connection conn = myGetConnection();
-		String sql = "INSERT INTO customer(uid, name) VALUES(?, ?);";
+		String sql = "INSERT INTO player VALUES(?, ?, ?, ?, ?, DEFAULT);";
 		try {
 			PreparedStatement pStmt = conn.prepareStatement(sql);
-			pStmt.setString(1, c.getUid());
-			pStmt.setString(2, c.getName());
+			pStmt.setInt(1, p.getBackNumber());
+			pStmt.setString(2, p.getName());
+			pStmt.setString(3, p.getPosition().toString());
+			pStmt.setString(4, p.getBirDate().toString());
+			pStmt.setInt(5, p.getHeight());
 			
 			pStmt.executeUpdate();
 			pStmt.close();
@@ -160,5 +160,7 @@ public class DAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} 
+	
 	}
-}
+		
+	}
