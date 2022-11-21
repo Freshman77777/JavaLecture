@@ -1,6 +1,7 @@
 package mysql.erd;
 
 import org.mindrot.jbcrypt.BCrypt;
+
 /*
  * $2a: bcrypt version 정보
  * $10: 라운드 정보
