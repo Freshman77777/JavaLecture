@@ -9,7 +9,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		DAO dao = new DAO();
-		Player p1 = new Player(8,"페드리","미드필더",LocalDate.parse("2002-11-25"),174,0);
+		Player p1 = new Player(8,"페드리","미드필더","2002-11-25",174,0);
 		
 				
 				
