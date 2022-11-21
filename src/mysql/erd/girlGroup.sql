@@ -1,4 +1,4 @@
-SET SESSION FOREIGN_KEY_CHECKS=0;
+SET SESSION FOREIGN_KEY_CHECKS=1;
 
 /* Drop Tables */
 
@@ -15,9 +15,9 @@ CREATE TABLE girlGroup
 	gid int NOT NULL AUTO_INCREMENT,
 	gname varchar(20) NOT NULL,
 	company varchar(20) NOT NULL,
-	debut date DEFAULT NOW(), SYSDATE(),
+	debut date DEFAULT (CURRENT_DATE),
 	PRIMARY KEY (gid)
-);
+) AUTO_INCREMENT=101;
 
 
 CREATE TABLE hitSong
@@ -28,7 +28,7 @@ CREATE TABLE hitSong
 	writer varchar(20),
 	gid int NOT NULL,
 	PRIMARY KEY (sid)
-);
+)AUTO_INCREMENT=1001;
 
 
 
