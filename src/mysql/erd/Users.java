@@ -1,12 +1,21 @@
 package mysql.erd;
 
+import java.time.LocalDate;
+
 public class Users {
 	private String uid;
 	private String pwd;
 	private String uname;
 	private String email;
 	private LocalDate regDate;
+	
 	Users() {}
+	Users(String uid, String pwd, String uname, String email) {
+		this.uid = uid;
+		this.pwd = pwd;
+		this.uname = uname;
+		this.email = email;
+	}
 	Users(String uid, String pwd, String uname, String email, LocalDate regDate) {
 		this.uid = uid;
 		this.pwd = pwd;
@@ -14,9 +23,12 @@ public class Users {
 		this.email = email;
 		this.regDate = regDate;
 	}
- 	
-		
-		public String getUid() {
+	@Override
+	public String toString() {
+		return "Users [" + uid + ", " + pwd + ", " + uname + ", " + email + ", " + regDate
+				+ "]";
+	}
+	public String getUid() {
 		return uid;
 	}
 	public void setUid(String uid) {
@@ -46,9 +58,4 @@ public class Users {
 	public void setRegDate(LocalDate regDate) {
 		this.regDate = regDate;
 	}
-	}
-		
-
-	
-
 }
