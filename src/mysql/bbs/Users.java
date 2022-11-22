@@ -1,4 +1,4 @@
-package mysql.erd;
+package mysql.bbs;
 
 import java.time.LocalDate;
 

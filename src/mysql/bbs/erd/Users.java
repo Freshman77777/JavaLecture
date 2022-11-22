@@ -1,4 +1,4 @@
-package mysql.erd.bbs;
+package mysql.bbs.erd;
 
 import java.io.Serializable;
 import java.util.Date;
