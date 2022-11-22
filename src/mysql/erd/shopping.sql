@@ -16,7 +16,7 @@ CREATE TABLE cart
 (
 	oid int NOT NULL,
 	pid int NOT NULL,
-	quantity int DEFAULT 0 NOT NULL,
+	quantity int NOT NULL,
 	UNIQUE (oid, pid)
 );
 
@@ -76,3 +76,6 @@ ALTER TABLE orders
 	ON UPDATE RESTRICT
 	ON DELETE RESTRICT
 ;
+
+
+

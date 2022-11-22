@@ -17,7 +17,7 @@ public class Cart implements Serializable {
 	private Orders orders;
 
 	/** 상품 테이블. */
-	private Product products;
+	private Products products;
 
 	/** 수량. */
 	private Integer quantity;
@@ -53,7 +53,7 @@ public class Cart implements Serializable {
 	 * @param products
 	 *            상품 테이블
 	 */
-	public void setProducts(Product products) {
+	public void setProducts(Products products) {
 		this.products = products;
 	}
 
@@ -62,7 +62,7 @@ public class Cart implements Serializable {
 	 * 
 	 * @return 상품 테이블
 	 */
-	public Product getProducts() {
+	public Products getProducts() {
 		return this.products;
 	}
 
