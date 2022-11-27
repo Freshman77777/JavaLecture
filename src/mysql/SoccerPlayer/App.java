@@ -12,9 +12,9 @@ public class App {
 		boolean run = true;
 		while (run) {
 			System.out.println("--------------------------------------------------------------------");
-			System.out.println("1.¼±¼ö ¸ñ·Ï | 2.¼±¼ö µî·Ï | 3.¼±¼öÁ¤º¸ ¼öÁ¤ | 4.¼±¼ö ¹æÃâ | 5.Á¾·á");
+			System.out.println("1.ì„ ìˆ˜ëª©ë¡ | 2.ì„ ìˆ˜ë“±ë¡ | 3.ì •ë³´ìˆ˜ì • | 4.ì„ ìˆ˜íƒˆí‡´ | 5.ì¢…ë£Œ");
 			System.out.println("--------------------------------------------------------------------");
-			System.out.print("¼±ÅÃ> ");
+			System.out.print("ì„ íƒ> ");
 			
 			int selectNo = Integer.parseInt(scan.nextLine());
 			switch(selectNo) {
@@ -29,10 +29,11 @@ public class App {
 			case 5:
 				run = false; break;
 			default:
-				System.out.println("Warning: 1¿¡¼­ 5±îÁöÀÇ ¼ýÀÚ¸¸ ÀÔ·ÂÇÏ¼¼¿ä.");
+				System.out.println("Warning: 1ì—ì„œ 5ê¹Œì§€ì˜ ìˆ«ìžë§Œ ìž…ë ¥í•˜ì„¸ìš”.");
 			}
 		}
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+		scan.close();
+		System.out.println("í”„ë¡œê·¸ëž¨ ì¢…ë£Œ");
 	}
 
 	public static void listPlayers() {
@@ -42,43 +43,56 @@ public class App {
 	}
 	
 	public static void registerPlayer() {
-		int backNumber = null;
+		int backNumber;
 		while (true) {
-			System.out.print("µî¹øÈ£> ");
-			backNumber = scan.nextInt();
+			System.out.print("ë“±ë²ˆí˜¸> ");
+			backNumber = Integer.parseInt(scan.nextInt());
 			Player p = dao.getPlayer(backNumber);
-			if (p.getBackNumber() == null)
+			if (p.getName() == null)
 				break;
-			System.out.println("Áßº¹µÈ µî¹øÈ£ÀÔ´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä.");
+			System.out.println("ì¤‘ë³µëœ ë“±ë²ˆí˜¸ìž…ë‹ˆë‹¤. ë‹¤ì‹œ ìž…ë ¥í•˜ì„¸ìš”.");
 		}
-		System.out.println("¼±¼ö¸í> ");
+		System.out.println("ì´ë¦„>");
 		String name = scan.nextLine();
-		Player pd = new Player(backNumber, name);
-		dao.insertPlayer(pc);
-		System.out.println("¼±¼ö µî·ÏÀ» ¸¶ÃÆ½À´Ï´Ù.");
+		System.out.println("í¬ì§€ì…˜>");
+		String position = scan.nextLine();
+		System.out.println("ìƒë…„ì›”ì¼>");
+		String birDate = scan.nextLine();
+		System.out.println("ì‹ ìž¥>");
+		int height = Integer.parseInt(scan.nextLine());
+		Player p = new Player(backNumber, name, position, birDate, height, 0);
+		dao.insertPlayer(p);
+		System.out.println("ì„ ìˆ˜ ë“±ë¡ì„ ë§ˆì³¤ìŠµë‹ˆë‹¤.");		
 	}
 	
 	public static void updatePlayer() {
-		System.out.print("µî¹øÈ£> ");
+		System.out.print("ë“±ë²ˆí˜¸> ");
 		int backNumber = scan.nextInt();
 		Player p = dao.getPlayer(backNumber);
-		System.out.print("¼±¼ö¸í(" + p.getName() + ")> ");
+		
+		System.out.print("ì´ë¦„(" + p.getName() + ")> ");
 		String name = scan.nextLine();
-		System.out.println("Æ÷Áö¼Ç(" +p.getPosition() + ")> ");
+		name = (name.length() == 0) ? p.getName() : name;
+		
+		System.out.println("í¬ì§€ì…˜(" +p.getPosition() + ")> ");
 		String position = scan.nextLine();
-		System.out.print("»ý³â¿ùÀÏ(" + p.getBirDate().toString() +")> ");
+		position = (position.length() == 0) ? p.getPosition().toString() : position;
+		
+		System.out.print("ìƒë…„ì›”ì¼(" + p.getBirDate()+")> ");
 		String birDate = scan.nextLine();
+		birDate = (birDate.length() == 0) ? 
+		
 		System.out.println("Å°>");
 		int height = scan.nextInt();
 		p = new Player(backNumber, name, position, birDate , height,  0);
 		dao.updatePlayer(p);
-		System.out.println("¼±¼öÁ¤º¸ ¼öÁ¤À» ¸¶ÃÆ½À´Ï´Ù.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Æ½ï¿½ï¿½Ï´ï¿½.");
 	}
 	
 	public static void deletePlayer() {
-		System.out.print("µî¹øÈ£> ");
+		System.out.print("ï¿½ï¿½ï¿½È£> ");
 		int backNumber = scan.nextInt();
 		dao.deletePlayer(backNumber);
-		System.out.println("¼±¼ö¹æÃâÀ» ¸¶ÃÆ½À´Ï´Ù.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Æ½ï¿½ï¿½Ï´ï¿½.");
 	}
 }

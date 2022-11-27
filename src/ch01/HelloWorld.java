@@ -1,16 +1,16 @@
 package ch01;
 
 /*
- *  Ã³À½À¸·Î ÀÛ¼ºÇØ º¸´Â ÀÚ¹Ù ÇÁ·Î±×·¥
+ *  ì²˜ìŒìœ¼ë¡œ ì‘ì„±í•´ ë³´ëŠ” ìë°” í”„ë¡œê·¸ë¨
  */
 public class HelloWorld {		// class
 	
 	public static void main(String[] args) {	// method
 		System.out.println("Hello World!!!");	// sysout + Ctrl+Space
-		System.out.println("¾È³çÇÏ¼¼¿ä?");
+		System.out.println("ì•ˆë…•í•˜ì„¸ìš”?");
 		
 		int x = 1;
 		int y = x + 1;
-		System.out.println("x = " + x + ", y = " + y);	/* ÀÌ ºÎºĞµµ ÁÖ¼®ÀÔ´Ï´Ù. */
+		System.out.println("x = " + x + ", y = " + y);	/* ì´ ë¶€ë¶„ë„ ì£¼ì„ì…ë‹ˆë‹¤. */
 	}
 }

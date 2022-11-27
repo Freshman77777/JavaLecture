@@ -10,48 +10,65 @@ public class Player {
 	private LocalDate birDate;
 	private int height;
 	private int isDeleted;
-
 	
-	Player() {} 
-	Player(String name, int backNumber, String position, String birDate, int height, int isDeleted) {	
-	this.name = name;
-	this.backNumber = backNumber;
-	this.position = position;
-	this.birDate = LocalDate.parse(birDate);
-	this.height = height;
-	this.isDeleted = isDeleted;
-	}
+	
+	Player() {}
+	Player(String name, int backNumber, String position, LocalDate birDate, int height, int isDeleted) {
+		super();
+		this.name = name;
+		this.backNumber = backNumber;
+		this.position = position;
+		this.birDate = birDate;
+		this.height = height;
+		this.isDeleted = isDeleted;
+		}
 	@Override
 	public String toString() {
-		return "Player [" + backNumber + ", " + name + ", " + position + ", " + birDate
-				+ ", " + height+ ", " + isDeleted + "]";
+		return "Player [name=" + name + ", backNumber=" + backNumber + ", position=" + position + ", birDate=" + birDate
+				+ ", height=" + height + ", isDeleted=" + isDeleted + "]";
 	}
-
-
-	public String getName(String name) {
+	public String getName() {
 		return name;
 	}
-
-
-	public int getBackNumber(int backNumber) {
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getBackNumber() {
 		return backNumber;
 	}
-
-
-	public String getPosition(String position) {
+	public void setBackNumber(int backNumber) {
+		this.backNumber = backNumber;
+	}
+	public String getPosition() {
 		return position;
 	}
-
-
-	public void setBirDate(LocalDate birDate) {
-		this.birDate= birDate ;
+	public void setPosition(String position) {
+		this.position = position;
 	}
-
-
-	public int getHeight(int height) {
+	public LocalDate getBirDate() {
+		return birDate;
+	}
+	public void setBirDate(LocalDate birDate) {
+		this.birDate = birDate;
+	}
+	public int getHeight() {
 		return height;
+	}
+	public void setHeight(int height) {
+		this.height = height;
+	}
+	public int getIsDeleted() {
+		return isDeleted;
 	}
 	public void setIsDeleted(int isDeleted) {
 		this.isDeleted = isDeleted;
 	}
-}
+}	
+	
+	
+	
+	
+	
+	
+
+	
